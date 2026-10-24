@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-10-23 15:13:04",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "seed": 42,
+  "signal": "purchases",
+  "neighbours": 30,
+  "domains": {
+    "clothing": {
+      "label": "Clothing",
+      "other_label": "Footwear & accessories",
+      "scenarios": {
+        "warm": {
+          "n_users": 365,
+          "avg_relevant": 2.24,
+          "results": {
+            "similar_shoppers": {
+              "ndcg@5": 0.0923,
+              "ndcg@10": 0.1198,
+              "ndcg@20": 0.1525,
+              "recall@5": 0.1061,
+              "recall@10": 0.1753,
+              "recall@20": 0.2793,
+              "hit@5": 0.2082,
+              "hit@10": 0.3233,
+              "hit@20": 0.4685,
+              "coverage@10": 0.426
+            },
+            "popularity": {
+              "ndcg@5": 0.0359,
+              "ndcg@10": 0.0566,
+              "ndcg@20": 0.0864,
+              "recall@5": 0.0482,
+              "recall@10": 0.1036,
+              "recall@20": 0.2005,
+              "hit@5": 0.1096,
+              "hit@10": 0.2027,
+              "hit@20": 0.3534,
+              "coverage@10": 0.0606
+            },
+            "content": {
+              "ndcg@5": 0.1523,
+              "ndcg@10": 0.1844,
+              "ndcg@20": 0.2279,
+              "recall@5": 0.1894,
+              "recall@10": 0.2707,
+              "recall@20": 0.4112,
+              "hit@5": 0.337,
+              "hit@10": 0.4521,
+              "hit@20": 0.6247,
+              "coverage@10": 0.861
+            },
+            "als": {
+              "ndcg@5": 0.0578,
+              "ndcg@10": 0.086,
+              "ndcg@20": 0.1137,
+              "recall@5": 0.0742,
+              "recall@10": 0.1471,
+              "recall@20": 0.2364,
+              "hit@5": 0.1534,
+              "hit@10": 0.2904,
+              "hit@20": 0.4164,
+              "coverage@10": 0.7576
+            }
+          }
+        },
+        "new_to_domain": {
+          "n_users": 107,
+          "avg_relevant": 12.39,
+          "results": {
+            "similar_shoppers": {
+              "ndcg@5": 0.2282,
+              "ndcg@10": 0.2175,
+              "ndcg@20": 0.2329,
+              "recall@5": 0.0854,
+              "recall@10": 0.1514,
+              "recall@20": 0.2399,
+              "hit@5": 0.6262,
+              "hit@10": 0.785,
+              "hit@20": 0.8972,
+              "coverage@10": 0.3155
+            },
+            "popularity": {
+              "ndcg@5": 0.1114,
+              "ndcg@10": 0.1116,
+              "ndcg@20": 0.1254,
+              "recall@5": 0.0383,
+              "recall@10": 0.0833,
+              "recall@20": 0.1374,
+              "hit@5": 0.3645,
+              "hit@10": 0.6075,
+              "hit@20": 0.7664,
+              "coverage@10": 0.0357
+            },
+            "content": {
+              "ndcg@5": 0.3608,
+              "ndcg@10": 0.3178,
+              "ndcg@20": 0.3494,
+              "recall@5": 0.1541,
+              "recall@10": 0.2241,
+              "recall@20": 0.3533,
+              "hit@5": 0.8131,
+              "hit@10": 0.8692,
+              "hit@20": 0.9346,
+              "coverage@10": 0.6578
+            },
+            "als": {
+              "ndcg@5": 0.1114,
+              "ndcg@10": 0.1116,
+              "ndcg@20": 0.1254,
+              "recall@5": 0.0383,
+              "recall@10": 0.0833,
+              "recall@20": 0.1374,
+              "hit@5": 0.3645,
+              "hit@10": 0.6075,
+              "hit@20": 0.7664,
+              "coverage@10": 0.0357
+            }
+          }
+        }
+      }
+    },
+    "accessories": {
+      "label": "Footwear & accessories",
+      "other_label": "Clothing",
+      "scenarios": {
+        "warm": {
+          "n_users": 299,
+          "avg_relevant": 2.27,
+          "results": {
+            "similar_shoppers": {
+              "ndcg@5": 0.1247,
+              "ndcg@10": 0.1598,
+              "ndcg@20": 0.1949,
+              "recall@5": 0.1614,
+              "recall@10": 0.2515,
+              "recall@20": 0.3645,
+              "hit@5": 0.3211,
+              "hit@10": 0.4548,
+              "hit@20": 0.5585,
+              "coverage@10": 0.507
+            },
+            "popularity": {
+              "ndcg@5": 0.0492,
+              "ndcg@10": 0.0748,
+              "ndcg@20": 0.0994,
+              "recall@5": 0.0621,
+              "recall@10": 0.1313,
+              "recall@20": 0.2074,
+              "hit@5": 0.1271,
+              "hit@10": 0.2241,
+              "hit@20": 0.3612,
+              "coverage@10": 0.0822
+            },
+            "content": {
+              "ndcg@5": 0.1753,
+              "ndcg@10": 0.2282,
+              "ndcg@20": 0.2759,
+              "recall@5": 0.2109,
+              "recall@10": 0.355,
+              "recall@20": 0.505,
+              "hit@5": 0.398,
+              "hit@10": 0.5719,
+              "hit@20": 0.7057,
+              "coverage@10": 0.8662
+            },
+            "als": {
+              "ndcg@5": 0.0573,
+              "ndcg@10": 0.0816,
+              "ndcg@20": 0.1222,
+              "recall@5": 0.0808,
+              "recall@10": 0.1384,
+              "recall@20": 0.2738,
+              "hit@5": 0.1672,
+              "hit@10": 0.291,
+              "hit@20": 0.4515,
+              "coverage@10": 0.8521
+            }
+          }
+        },
+        "new_to_domain": {
+          "n_users": 108,
+          "avg_relevant": 11.12,
+          "results": {
+            "similar_shoppers": {
+              "ndcg@5": 0.2755,
+              "ndcg@10": 0.262,
+              "ndcg@20": 0.2903,
+              "recall@5": 0.1334,
+              "recall@10": 0.2111,
+              "recall@20": 0.3201,
+              "hit@5": 0.7037,
+              "hit@10": 0.8333,
+              "hit@20": 0.9074,
+              "coverage@10": 0.3826
+            },
+            "popularity": {
+              "ndcg@5": 0.1518,
+              "ndcg@10": 0.1405,
+              "ndcg@20": 0.1679,
+              "recall@5": 0.068,
+              "recall@10": 0.112,
+              "recall@20": 0.1972,
+              "hit@5": 0.5278,
+              "hit@10": 0.6667,
+              "hit@20": 0.8333,
+              "coverage@10": 0.0469
+            },
+            "content": {
+              "ndcg@5": 0.4101,
+              "ndcg@10": 0.378,
+              "ndcg@20": 0.421,
+              "recall@5": 0.1978,
+              "recall@10": 0.2876,
+              "recall@20": 0.4367,
+              "hit@5": 0.8889,
+              "hit@10": 0.963,
+              "hit@20": 0.9815,
+              "coverage@10": 0.7019
+            },
+            "als": {
+              "ndcg@5": 0.1518,
+              "ndcg@10": 0.1405,
+              "ndcg@20": 0.1679,
+              "recall@5": 0.068,
+              "recall@10": 0.112,
+              "recall@20": 0.1972,
+              "hit@5": 0.5278,
+              "hit@10": 0.6667,
+              "hit@20": 0.8333,
+              "coverage@10": 0.0469
+            }
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "All data is synthetic; absolute numbers are optimistic. Compare models against each other only.",
+    "A shopper with no purchase history gets the most popular items, so for them 'Shoppers like you' and 'Most popular' are identical by design.",
+    "New to this domain: the shopper's events in the domain were hidden from training; only their purchases in the other domain are known."
+  ]
+}

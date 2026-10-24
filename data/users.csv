@@ -1,0 +1,601 @@
+user_id,gender,age_group,city,preferred_styles,favourite_colours,budget_per_outfit_inr,top_size,bottom_size,shoe_size,is_cold_start,is_synthetic,signup_date
+U0001,men,18-24,Kolkata,ethnic|minimalist,Teal|Brown|Black,3000,XXL,36,8,False,True,2025-05-25
+U0002,men,18-24,Patna,streetwear|sporty,Light Wash Denim|Navy|Rust,2000,XXL,32,10,True,True,2025-08-08
+U0003,men,45+,Hyderabad,party|bohemian,Dark Wash Denim|Terracotta|Coral,2000,L,38,11,False,True,2024-11-15
+U0004,women,35-44,Chennai,party|minimalist,Coral|Royal Blue|Cream,2000,S,34,6,False,True,2024-10-31
+U0005,women,25-34,Jaipur,streetwear|sporty|casual,Powder Blue|Light Wash Denim|Blush Pink,3000,S,34,8,False,True,2025-04-08
+U0006,men,25-34,Ahmedabad,bohemian|classic,Brown|Orange|Lilac,3000,XXL,30,9,True,True,2025-07-03
+U0007,women,25-34,Chandigarh,minimalist|casual|ethnic,Off-White|Terracotta|Lemon Yellow,1500,XS,30,7,False,True,2025-08-04
+U0008,men,35-44,Ahmedabad,streetwear|sporty,Tan|Dark Wash Denim|Black,3000,S,32,9,False,True,2025-02-13
+U0009,women,18-24,Patna,minimalist|ethnic|casual,Peach|Beige|Tan,2000,S,28,7,False,True,2025-10-29
+U0010,men,18-24,Bhagalpur,bohemian|classic,Khaki|Tan|Lilac,1500,XL,36,8,False,True,2026-06-06
+U0011,women,35-44,Jaipur,minimalist|ethnic|casual,Grey|Lemon Yellow|Orange,1500,L,32,4,False,True,2025-07-01
+U0012,women,18-24,Pune,party|ethnic|streetwear,Mustard|Khaki|Mint Green,1500,L,32,8,False,True,2026-07-17
+U0013,men,18-24,Patna,classic|formal|minimalist,Navy|White|Beige,2000,M,34,11,False,True,2024-09-30
+U0014,men,18-24,Bengaluru,streetwear|sporty,Terracotta|Cream|Beige,2000,L,30,7,False,True,2026-04-02
+U0015,men,25-34,Jaipur,minimalist|casual|bohemian,Peach|Rust|Black,1500,XL,32,10,False,True,2025-12-27
+U0016,women,25-34,Kochi,minimalist|sporty,White|Blush Pink|Lavender,5000,S,32,6,False,True,2025-01-03
+U0017,men,18-24,Chandigarh,classic|formal|casual,Off-White|Beige|Light Wash Denim,3000,M,36,7,False,True,2025-10-07
+U0018,men,18-24,Patna,ethnic|bohemian,Mustard|Rust|Terracotta,3000,L,30,10,False,True,2025-03-13
+U0019,women,35-44,Jaipur,ethnic|party,Emerald Green|Black|Off-White,3000,XL,34,5,False,True,2024-10-22
+U0020,men,35-44,Bhagalpur,bohemian|sporty|streetwear,Tan|Fuchsia|Maroon,3000,M,30,10,True,True,2025-10-20
+U0021,women,18-24,Pune,bohemian|ethnic|streetwear,Blush Pink|Orange|Emerald Green,5000,M,32,7,False,True,2025-04-04
+U0022,men,18-24,Jaipur,streetwear|sporty|party,Lilac|Off-White|Dark Wash Denim,2000,XXL,30,8,False,True,2026-01-03
+U0023,women,25-34,Kolkata,ethnic|classic,Khaki|Emerald Green|Lavender,2000,M,32,8,False,True,2024-08-30
+U0024,men,35-44,Ahmedabad,party|ethnic|bohemian,Red|Dark Wash Denim|Royal Blue,3000,M,32,10,False,True,2026-01-13
+U0025,women,18-24,Chennai,ethnic|party|streetwear,Cream|Red|Light Wash Denim,5000,L,28,6,False,True,2024-11-17
+U0026,women,18-24,Bengaluru,bohemian|sporty|streetwear,Lilac|Blush Pink|Fuchsia,3000,M,32,7,False,True,2025-08-08
+U0027,men,45+,Pune,party|ethnic,Sage Green|Light Wash Denim|Dark Wash Denim,2000,M,32,10,True,True,2025-07-14
+U0028,men,18-24,Kolkata,party|ethnic,Royal Blue|Tan|Off-White,3000,S,36,7,False,True,2026-08-24
+U0029,men,45+,Lucknow,minimalist|sporty,Beige|Brown|Rust,3000,XXL,36,10,False,True,2025-07-12
+U0030,women,25-34,Pune,streetwear|sporty|party,Powder Blue|Sage Green|Fuchsia,1500,XS,32,7,False,True,2025-09-28
+U0031,men,35-44,Patna,streetwear|sporty|bohemian,Coral|Off-White|Teal,2000,L,36,9,False,True,2025-07-30
+U0032,women,35-44,Pune,streetwear|sporty|bohemian,Dark Wash Denim|Mint Green|Emerald Green,1500,XL,34,4,False,True,2026-09-20
+U0033,men,18-24,Kochi,minimalist|ethnic|casual,Beige|Red|Lemon Yellow,3000,XXL,34,8,False,True,2024-11-05
+U0034,women,18-24,Jaipur,ethnic|classic,Tan|Lilac|White,1500,M,28,4,False,True,2024-11-22
+U0035,women,18-24,Mumbai,ethnic|party|sporty,Maroon|Sage Green|Dark Wash Denim,3000,XL,32,6,False,True,2025-03-07
+U0036,men,18-24,Ranchi,classic|formal,Navy|Lemon Yellow|Dark Wash Denim,1500,S,38,9,False,True,2026-05-16
+U0037,men,18-24,Pune,streetwear|party,Emerald Green|Coral|Orange,3000,S,36,9,False,True,2025-01-21
+U0038,women,18-24,Kolkata,streetwear|sporty,Brown|Red|Mint Green,3000,XS,34,5,False,True,2025-10-05
+U0039,women,25-34,Pune,classic|formal|bohemian,Beige|Off-White|Teal,5000,M,32,7,False,True,2026-07-13
+U0040,women,35-44,Mumbai,classic|formal|minimalist,Terracotta|Mustard|Tan,2000,XS,32,6,False,True,2026-07-08
+U0041,women,25-34,Pune,streetwear|party|sporty,Powder Blue|Emerald Green|Mint Green,2000,XL,28,6,False,True,2026-05-13
+U0042,women,35-44,Mumbai,classic|formal,Grey|Navy|Fuchsia,3000,S,32,4,False,True,2026-06-17
+U0043,women,18-24,Lucknow,bohemian|party,Maroon|Royal Blue|Lavender,3000,M,32,8,False,True,2025-06-22
+U0044,women,45+,Lucknow,minimalist|formal|classic,Cream|White|Black,2000,L,30,7,False,True,2025-07-30
+U0045,men,18-24,Patna,party|streetwear,Grey|Emerald Green|Dark Wash Denim,1500,S,38,10,False,True,2025-02-20
+U0046,men,25-34,Pune,streetwear|sporty|minimalist,Blush Pink|Peach|Powder Blue,2000,M,30,10,False,True,2024-09-21
+U0047,men,25-34,Jaipur,classic|formal,Blush Pink|Brown|Peach,3000,XXL,34,7,True,True,2026-03-21
+U0048,men,35-44,Hyderabad,minimalist|formal,Light Wash Denim|Cream|Black,3000,S,38,9,False,True,2024-10-30
+U0049,men,18-24,Ahmedabad,streetwear|sporty,Terracotta|Sage Green|Fuchsia,2000,XXL,34,11,False,True,2026-01-08
+U0050,men,25-34,Kolkata,streetwear|sporty,Fuchsia|Sage Green|Red,5000,L,34,9,False,True,2025-05-20
+U0051,women,18-24,Patna,ethnic|minimalist,Teal|Emerald Green|Rust,2000,S,34,6,False,True,2025-04-19
+U0052,women,18-24,Chandigarh,minimalist|bohemian,Dark Wash Denim|White|Terracotta,2000,XL,28,7,False,True,2024-09-09
+U0053,men,18-24,Bhagalpur,classic|party,Black|Off-White|Rust,2000,XXL,34,9,False,True,2025-03-12
+U0054,women,18-24,Ahmedabad,party|classic,Coral|Orange|Tan,2000,L,28,5,False,True,2025-07-29
+U0055,men,18-24,Pune,streetwear|sporty,Light Wash Denim|Black|Navy,3000,S,34,11,False,True,2025-05-16
+U0056,women,18-24,Kochi,bohemian|classic,Tan|Lavender|Navy,2000,XL,30,7,False,True,2025-07-25
+U0057,men,35-44,Hyderabad,bohemian|ethnic,Royal Blue|Off-White|Maroon,3000,M,30,11,False,True,2026-03-20
+U0058,men,35-44,Ranchi,streetwear|sporty,Coral|Emerald Green|Blush Pink,1500,XL,38,10,False,True,2024-09-06
+U0059,women,25-34,Kochi,bohemian|formal,Black|Light Wash Denim|Lilac,1500,XL,32,6,False,True,2026-09-07
+U0060,men,18-24,Patna,bohemian|classic|formal,Lemon Yellow|Royal Blue|Dark Wash Denim,2000,XXL,38,10,False,True,2025-01-22
+U0061,men,18-24,Chennai,classic|formal|party,Lavender|Maroon|Dark Wash Denim,2000,XL,32,8,False,True,2025-08-16
+U0062,men,25-34,Patna,minimalist|casual,Navy|Grey|White,3000,L,36,8,False,True,2025-04-29
+U0063,women,25-34,Pune,party|classic,Royal Blue|Navy|Dark Wash Denim,2000,S,28,8,False,True,2025-07-22
+U0064,women,18-24,Lucknow,party|ethnic|streetwear,Lavender|Light Wash Denim|Royal Blue,2000,XL,34,4,True,True,2025-11-27
+U0065,men,25-34,Lucknow,streetwear|sporty|party,Lemon Yellow|Cream|Emerald Green,1500,XL,30,9,False,True,2026-07-08
+U0066,men,18-24,Chandigarh,party|classic,Red|Fuchsia|Cream,5000,M,36,9,True,True,2026-09-17
+U0067,men,35-44,Kochi,party|streetwear|casual,Mustard|Light Wash Denim|Teal,1500,M,34,8,False,True,2026-08-07
+U0068,men,18-24,Hyderabad,bohemian|streetwear,Peach|Light Wash Denim|White,2000,XXL,36,10,False,True,2026-01-04
+U0069,men,45+,Ranchi,minimalist|bohemian|casual,Light Wash Denim|Tan|Rust,2000,M,36,11,False,True,2024-10-15
+U0070,women,18-24,Hyderabad,party|sporty|streetwear,Light Wash Denim|Dark Wash Denim|Emerald Green,3000,L,28,4,True,True,2025-05-05
+U0071,women,18-24,Jaipur,minimalist|formal|classic,White|Fuchsia|Khaki,3000,L,28,7,False,True,2025-09-04
+U0072,women,25-34,Jaipur,minimalist|bohemian,Grey|Light Wash Denim|Red,2000,L,28,6,False,True,2026-05-03
+U0073,men,18-24,Kolkata,ethnic|sporty|streetwear,Maroon|Terracotta|Red,2000,XL,38,10,False,True,2026-04-03
+U0074,women,18-24,Bengaluru,ethnic|party|streetwear,Navy|Royal Blue|Off-White,2000,M,28,5,False,True,2025-05-19
+U0075,women,25-34,Bengaluru,minimalist|sporty|streetwear,Black|Lilac|Orange,3000,S,34,5,False,True,2025-05-25
+U0076,women,45+,Ahmedabad,streetwear|sporty,Coral|Off-White|Dark Wash Denim,1500,XS,34,7,False,True,2024-08-31
+U0077,women,25-34,Chennai,classic|formal,Light Wash Denim|Peach|Black,2000,L,32,7,True,True,2025-05-15
+U0078,women,18-24,Lucknow,bohemian|party,Coral|Khaki|Grey,2000,XS,30,5,False,True,2024-09-14
+U0079,women,35-44,Kochi,ethnic|party|sporty,Dark Wash Denim|Red|Mustard,5000,M,32,6,False,True,2024-10-23
+U0080,women,35-44,Jaipur,party|streetwear,Brown|Emerald Green|Coral,2000,L,32,5,False,True,2026-06-28
+U0081,men,18-24,Chandigarh,bohemian|party,Emerald Green|Blush Pink|Coral,2000,XL,34,8,False,True,2026-08-26
+U0082,women,25-34,Bengaluru,streetwear|sporty,White|Lavender|Peach,2000,XL,28,6,False,True,2024-09-20
+U0083,men,18-24,Lucknow,classic|formal,Lemon Yellow|Dark Wash Denim|Tan,2000,M,34,8,False,True,2025-08-10
+U0084,men,25-34,Pune,ethnic|classic|formal,Khaki|Orange|Dark Wash Denim,1500,XL,32,11,False,True,2025-11-13
+U0085,women,18-24,Mumbai,party|ethnic|bohemian,Teal|Emerald Green|Lilac,5000,XS,32,5,False,True,2025-04-17
+U0086,women,18-24,Bengaluru,party|formal|classic,Grey|Lavender|Cream,2000,M,28,5,False,True,2026-04-20
+U0087,women,18-24,Lucknow,party|minimalist,Black|Teal|Tan,1500,XS,30,5,False,True,2025-12-07
+U0088,men,25-34,Ahmedabad,classic|formal|ethnic,Black|Light Wash Denim|Dark Wash Denim,3000,S,34,11,False,True,2025-06-11
+U0089,women,18-24,Jaipur,ethnic|formal|classic,Royal Blue|Coral|White,1500,XL,30,5,False,True,2025-09-28
+U0090,men,25-34,Hyderabad,minimalist|casual,Grey|Blush Pink|Mustard,3000,XL,32,7,False,True,2026-03-14
+U0091,women,18-24,Bhagalpur,minimalist|sporty|casual,Grey|Dark Wash Denim|Mint Green,5000,S,28,5,False,True,2025-06-26
+U0092,men,35-44,Hyderabad,bohemian|casual,Coral|Red|Lavender,2000,M,38,11,False,True,2025-10-28
+U0093,women,25-34,Kolkata,streetwear|sporty,Dark Wash Denim|Mint Green|Light Wash Denim,2000,XS,30,7,False,True,2024-10-17
+U0094,men,25-34,Jaipur,streetwear|sporty|ethnic,Mint Green|Dark Wash Denim|Olive,2000,M,30,11,True,True,2026-05-09
+U0095,men,18-24,Lucknow,party|ethnic,Cream|Dark Wash Denim|Grey,2000,S,38,10,True,True,2025-10-26
+U0096,women,25-34,Ranchi,bohemian|ethnic|streetwear,Light Wash Denim|Sage Green|Khaki,3000,XL,34,4,False,True,2025-03-28
+U0097,women,25-34,Jaipur,minimalist|party,Grey|Fuchsia|Dark Wash Denim,3000,S,32,8,False,True,2024-09-14
+U0098,women,25-34,Chennai,classic|formal,Maroon|Dark Wash Denim|Grey,1500,XL,30,6,False,True,2026-01-09
+U0099,women,25-34,Ranchi,minimalist|casual|party,Grey|Sage Green|Off-White,2000,S,34,4,False,True,2026-09-07
+U0100,women,25-34,Bengaluru,classic|formal|streetwear,Black|Dark Wash Denim|Sage Green,2000,S,28,7,False,True,2026-02-19
+U0101,women,18-24,Kolkata,classic|formal,Coral|Royal Blue|Teal,5000,XL,30,5,False,True,2024-10-13
+U0102,men,18-24,Patna,party|classic|formal,Royal Blue|Mustard|Coral,2000,L,34,11,False,True,2024-12-31
+U0103,men,25-34,Kochi,minimalist|formal,Maroon|Light Wash Denim|Grey,3000,XXL,32,11,False,True,2025-12-22
+U0104,women,25-34,Hyderabad,bohemian|ethnic,Beige|Brown|Rust,2000,L,30,5,False,True,2024-10-13
+U0105,women,18-24,Kolkata,bohemian|party,Khaki|Terracotta|Light Wash Denim,2000,XL,34,8,False,True,2025-01-08
+U0106,men,25-34,Kochi,classic|formal|minimalist,Navy|Grey|Light Wash Denim,5000,L,36,9,False,True,2025-12-03
+U0107,men,18-24,Kolkata,bohemian|party|sporty,Dark Wash Denim|Beige|Brown,1500,L,34,10,True,True,2026-02-20
+U0108,women,18-24,Ranchi,streetwear|sporty,Coral|Fuchsia|Red,5000,L,28,7,False,True,2025-03-08
+U0109,men,35-44,Ranchi,ethnic|party|casual,Brown|Beige|Tan,2000,L,30,8,False,True,2025-02-09
+U0110,women,18-24,Chennai,classic|formal,Mustard|Terracotta|Dark Wash Denim,3000,M,28,6,True,True,2025-11-17
+U0111,women,25-34,Patna,streetwear|sporty,Fuchsia|Dark Wash Denim|Lemon Yellow,3000,XL,30,5,False,True,2025-07-18
+U0112,women,35-44,Delhi,bohemian|ethnic|formal,Dark Wash Denim|Peach|Olive,5000,S,30,6,False,True,2025-03-27
+U0113,women,18-24,Bhagalpur,party|minimalist|casual,Tan|White|Lilac,3000,L,30,6,False,True,2026-04-29
+U0114,women,25-34,Mumbai,minimalist|sporty|streetwear,Navy|Olive|Royal Blue,2000,M,32,8,True,True,2024-09-11
+U0115,men,18-24,Delhi,streetwear|sporty,Orange|Tan|Dark Wash Denim,3000,XL,32,7,False,True,2026-03-24
+U0116,women,35-44,Chandigarh,bohemian|streetwear,Brown|Terracotta|Fuchsia,1500,S,30,8,False,True,2025-11-04
+U0117,women,35-44,Jaipur,minimalist|party|sporty,Coral|Mustard|Royal Blue,5000,S,32,8,False,True,2025-03-12
+U0118,women,25-34,Bhagalpur,streetwear|sporty|casual,Grey|Khaki|Dark Wash Denim,2000,XS,30,4,True,True,2026-06-26
+U0119,men,25-34,Bhagalpur,classic|formal|bohemian,Black|Lemon Yellow|Sage Green,3000,M,32,9,False,True,2024-10-31
+U0120,women,25-34,Kolkata,streetwear|sporty,Tan|Mustard|Lemon Yellow,3000,S,32,6,False,True,2025-10-27
+U0121,women,35-44,Ahmedabad,party|classic,White|Light Wash Denim|Royal Blue,5000,L,34,7,False,True,2024-11-17
+U0122,men,25-34,Kochi,party|classic,Teal|White|Red,3000,XXL,34,7,True,True,2024-12-30
+U0123,women,45+,Ranchi,minimalist|bohemian,Fuchsia|White|Lemon Yellow,5000,XL,34,6,False,True,2025-11-21
+U0124,women,18-24,Patna,minimalist|casual,Black|Off-White|Mint Green,3000,XS,30,8,False,True,2024-08-25
+U0125,men,35-44,Ahmedabad,ethnic|streetwear,Royal Blue|Tan|Khaki,1500,M,30,10,False,True,2026-02-05
+U0126,women,25-34,Kochi,minimalist|party,Brown|Teal|Tan,5000,S,32,4,False,True,2025-05-27
+U0127,men,18-24,Patna,ethnic|party|bohemian,Rust|Orange|Teal,2000,XL,30,10,False,True,2025-11-09
+U0128,women,25-34,Mumbai,streetwear|sporty|casual,Coral|Powder Blue|Fuchsia,3000,XS,30,6,False,True,2024-11-17
+U0129,women,25-34,Chandigarh,streetwear|sporty,Fuchsia|Blush Pink|Coral,5000,S,32,8,False,True,2026-04-11
+U0130,men,18-24,Kochi,classic|formal,Teal|Cream|Orange,5000,XXL,32,8,False,True,2025-09-28
+U0131,men,18-24,Bengaluru,ethnic|party,Beige|Lavender|Coral,5000,S,30,11,True,True,2026-01-09
+U0132,women,25-34,Delhi,minimalist|sporty,Powder Blue|Blush Pink|Lemon Yellow,1500,M,32,5,False,True,2026-04-20
+U0133,men,35-44,Pune,ethnic|minimalist,Mustard|Coral|Rust,3000,L,32,8,False,True,2025-05-13
+U0134,men,18-24,Kochi,bohemian|minimalist|sporty,Brown|Light Wash Denim|Rust,3000,XL,30,10,False,True,2026-07-17
+U0135,women,45+,Pune,party|minimalist,White|Sage Green|Mustard,3000,XS,34,7,False,True,2026-02-20
+U0136,women,18-24,Lucknow,bohemian|party,Lilac|Mustard|Maroon,2000,XS,28,5,False,True,2024-11-02
+U0137,men,25-34,Delhi,bohemian|streetwear,Light Wash Denim|Emerald Green|Lavender,3000,XL,38,9,False,True,2026-08-30
+U0138,women,18-24,Hyderabad,minimalist|ethnic,Orange|Lilac|Lavender,3000,XS,32,7,False,True,2025-05-17
+U0139,women,35-44,Mumbai,party|minimalist|casual,Grey|Off-White|Teal,2000,XS,34,7,False,True,2025-05-22
+U0140,women,25-34,Kolkata,bohemian|party,Fuchsia|Off-White|Brown,5000,M,28,7,False,True,2026-06-04
+U0141,women,25-34,Ahmedabad,bohemian|streetwear,Dark Wash Denim|Lavender|Mint Green,2000,L,34,4,False,True,2025-04-13
+U0142,women,35-44,Bengaluru,streetwear|ethnic,Grey|Orange|Red,1500,S,30,8,True,True,2025-07-26
+U0143,men,18-24,Bengaluru,classic|formal|casual,Light Wash Denim|Blush Pink|Beige,5000,XL,30,7,False,True,2024-11-24
+U0144,men,18-24,Lucknow,classic|formal|bohemian,Cream|Grey|Orange,5000,XL,32,10,False,True,2025-10-19
+U0145,men,25-34,Kochi,ethnic|party|casual,Emerald Green|Beige|Brown,1500,S,32,7,False,True,2026-06-23
+U0146,men,25-34,Pune,streetwear|sporty|ethnic,Teal|Mustard|Dark Wash Denim,5000,L,34,11,False,True,2026-08-03
+U0147,men,25-34,Mumbai,bohemian|streetwear|sporty,Brown|White|Black,2000,XL,30,8,False,True,2025-09-18
+U0148,men,18-24,Ranchi,bohemian|classic,Lilac|Olive|Fuchsia,2000,XXL,38,8,False,True,2025-02-25
+U0149,women,25-34,Kolkata,bohemian|streetwear,Rust|Olive|Powder Blue,5000,S,28,7,False,True,2025-11-17
+U0150,men,25-34,Pune,classic|formal,Off-White|Maroon|Tan,2000,XXL,36,8,True,True,2025-01-31
+U0151,men,25-34,Jaipur,classic|formal,Powder Blue|Grey|Teal,1500,L,32,9,True,True,2024-10-01
+U0152,women,25-34,Jaipur,ethnic|classic,Orange|Off-White|Tan,3000,XL,30,5,False,True,2024-12-28
+U0153,women,25-34,Hyderabad,ethnic|classic,Mustard|Blush Pink|Emerald Green,5000,XS,28,7,False,True,2024-09-23
+U0154,women,18-24,Hyderabad,ethnic|bohemian,Coral|Off-White|Light Wash Denim,2000,M,30,6,False,True,2026-01-04
+U0155,men,25-34,Lucknow,party|minimalist|casual,Black|Dark Wash Denim|Terracotta,5000,XXL,38,11,False,True,2025-01-12
+U0156,women,25-34,Pune,bohemian|party|formal,Peach|Beige|Orange,3000,M,30,8,False,True,2026-04-21
+U0157,women,18-24,Bengaluru,minimalist|formal|casual,White|Navy|Cream,3000,XS,30,4,False,True,2024-11-20
+U0158,men,18-24,Kolkata,ethnic|bohemian|streetwear,Rust|Light Wash Denim|Lilac,2000,S,38,10,False,True,2026-02-20
+U0159,men,25-34,Ahmedabad,ethnic|minimalist,Maroon|Brown|Rust,3000,XXL,36,10,False,True,2024-09-11
+U0160,women,18-24,Patna,classic|formal,Mustard|Sage Green|Coral,5000,L,28,6,False,True,2024-10-27
+U0161,men,18-24,Chennai,ethnic|party,Dark Wash Denim|Orange|Emerald Green,5000,L,36,11,False,True,2025-05-31
+U0162,men,18-24,Ranchi,ethnic|party|streetwear,Dark Wash Denim|Royal Blue|Lemon Yellow,3000,XXL,34,7,False,True,2026-03-16
+U0163,women,25-34,Patna,classic|formal,Black|Fuchsia|Red,3000,S,28,5,False,True,2026-01-04
+U0164,women,45+,Patna,ethnic|classic,Teal|Mint Green|Olive,2000,M,30,6,True,True,2025-12-28
+U0165,women,25-34,Chandigarh,bohemian|streetwear|sporty,Coral|Maroon|Royal Blue,3000,XL,30,7,False,True,2025-07-16
+U0166,women,18-24,Hyderabad,bohemian|ethnic,Mustard|Beige|Terracotta,3000,XS,30,6,False,True,2025-11-15
+U0167,women,25-34,Ranchi,minimalist|sporty,Khaki|Beige|White,2000,XL,32,8,False,True,2025-03-27
+U0168,men,18-24,Kolkata,streetwear|sporty,Mustard|Terracotta|Blush Pink,2000,M,30,8,False,True,2026-02-27
+U0169,men,25-34,Chandigarh,minimalist|casual|sporty,Cream|Blush Pink|Navy,1500,M,34,7,False,True,2024-12-31
+U0170,women,25-34,Kochi,bohemian|ethnic|streetwear,Fuchsia|Grey|Lilac,3000,L,34,6,False,True,2025-11-16
+U0171,women,35-44,Delhi,streetwear|sporty|classic,Beige|Grey|Powder Blue,5000,M,32,5,True,True,2024-12-20
+U0172,men,18-24,Bengaluru,minimalist|casual,Off-White|White|Navy,1500,M,36,8,False,True,2026-07-29
+U0173,women,18-24,Ahmedabad,party|bohemian,Mustard|Dark Wash Denim|Beige,5000,L,34,8,False,True,2026-06-02
+U0174,women,18-24,Delhi,minimalist|casual|party,Cream|Rust|Dark Wash Denim,3000,S,32,5,False,True,2026-07-28
+U0175,women,18-24,Hyderabad,bohemian|ethnic|minimalist,Lilac|Olive|Blush Pink,3000,L,30,6,True,True,2025-10-07
+U0176,men,25-34,Patna,ethnic|bohemian,Orange|Red|Royal Blue,3000,L,38,7,False,True,2025-03-04
+U0177,women,18-24,Ahmedabad,ethnic|formal,Terracotta|Teal|Mustard,2000,L,32,4,False,True,2025-09-23
+U0178,women,25-34,Kochi,bohemian|party|ethnic,Tan|Blush Pink|Olive,2000,M,32,4,False,True,2025-01-11
+U0179,women,25-34,Ahmedabad,streetwear|classic,Lilac|Grey|Royal Blue,1500,L,34,8,False,True,2025-05-22
+U0180,women,25-34,Hyderabad,bohemian|streetwear|sporty,Light Wash Denim|Sage Green|Brown,2000,XL,28,4,False,True,2026-01-30
+U0181,women,35-44,Chandigarh,party|streetwear,Black|Light Wash Denim|Tan,2000,L,34,4,False,True,2025-09-01
+U0182,men,25-34,Kochi,streetwear|sporty,Off-White|Coral|Dark Wash Denim,2000,L,38,9,False,True,2025-12-14
+U0183,women,35-44,Delhi,minimalist|ethnic|casual,Navy|Grey|Black,1500,XS,28,7,False,True,2026-04-22
+U0184,men,18-24,Ahmedabad,streetwear|sporty,Rust|Teal|Lilac,5000,L,30,10,False,True,2026-06-20
+U0185,men,35-44,Lucknow,classic|party,Fuchsia|Red|Off-White,2000,S,38,7,False,True,2026-06-08
+U0186,men,18-24,Lucknow,party|streetwear|sporty,Mint Green|Mustard|Orange,3000,XXL,36,10,False,True,2025-07-27
+U0187,women,18-24,Ahmedabad,bohemian|streetwear,Terracotta|White|Brown,3000,L,34,8,False,True,2024-11-10
+U0188,men,18-24,Hyderabad,classic|formal|minimalist,Light Wash Denim|Navy|Powder Blue,1500,XXL,32,7,False,True,2025-03-22
+U0189,men,45+,Chennai,bohemian|formal|party,Terracotta|Orange|Mint Green,2000,XL,30,10,False,True,2026-07-01
+U0190,women,25-34,Kolkata,party|minimalist|sporty,Coral|Orange|Dark Wash Denim,3000,S,32,7,False,True,2026-04-08
+U0191,women,35-44,Bhagalpur,ethnic|bohemian|formal,Red|Dark Wash Denim|Teal,2000,M,30,5,True,True,2026-07-31
+U0192,men,25-34,Ranchi,streetwear|sporty|party,Orange|Lilac|Lemon Yellow,2000,M,36,7,False,True,2025-05-21
+U0193,men,25-34,Patna,classic|formal,Brown|Dark Wash Denim|Khaki,3000,M,34,9,False,True,2026-02-07
+U0194,women,45+,Pune,party|ethnic,Olive|Light Wash Denim|Terracotta,3000,M,34,5,False,True,2024-10-05
+U0195,men,18-24,Chandigarh,ethnic|party|casual,Maroon|Lavender|Grey,3000,XL,34,9,True,True,2024-10-20
+U0196,women,35-44,Bengaluru,party|ethnic|streetwear,Dark Wash Denim|Orange|Blush Pink,1500,M,28,4,False,True,2026-06-03
+U0197,men,25-34,Kochi,classic|formal|bohemian,Cream|Khaki|Brown,5000,XXL,38,9,False,True,2026-09-10
+U0198,men,18-24,Hyderabad,streetwear|sporty|party,Emerald Green|Lilac|Light Wash Denim,3000,S,30,11,False,True,2026-05-08
+U0199,men,18-24,Bhagalpur,ethnic|bohemian,Fuchsia|Brown|Rust,3000,L,38,9,True,True,2024-11-21
+U0200,women,45+,Chandigarh,ethnic|formal,Fuchsia|Rust|Royal Blue,2000,M,28,6,True,True,2024-11-23
+U0201,men,18-24,Hyderabad,ethnic|minimalist|casual,Mustard|Tan|White,2000,XXL,32,9,False,True,2025-02-26
+U0202,women,25-34,Chandigarh,party|ethnic,Red|Maroon|Mustard,5000,S,30,5,False,True,2026-03-28
+U0203,women,45+,Mumbai,party|ethnic,Teal|Mustard|Emerald Green,2000,M,30,4,False,True,2026-07-19
+U0204,men,18-24,Patna,ethnic|bohemian|party,Teal|Dark Wash Denim|Lilac,3000,XXL,38,8,False,True,2025-08-03
+U0205,men,25-34,Ahmedabad,bohemian|party|formal,Maroon|Light Wash Denim|Fuchsia,3000,XXL,36,9,False,True,2025-09-07
+U0206,men,35-44,Kolkata,party|streetwear|sporty,Orange|Peach|Lilac,2000,L,32,9,False,True,2024-08-20
+U0207,men,18-24,Kolkata,classic|formal|party,Dark Wash Denim|Mint Green|Beige,2000,M,38,11,False,True,2026-06-25
+U0208,women,35-44,Patna,streetwear|sporty|party,Light Wash Denim|Mint Green|Sage Green,1500,M,28,8,False,True,2025-11-10
+U0209,women,25-34,Jaipur,classic|formal,Rust|Lemon Yellow|Cream,1500,M,28,7,False,True,2025-01-29
+U0210,women,25-34,Bengaluru,streetwear|sporty,Teal|Lilac|Olive,3000,XS,34,8,True,True,2026-07-21
+U0211,men,25-34,Jaipur,ethnic|classic,Terracotta|Red|Brown,3000,M,30,9,False,True,2026-02-28
+U0212,men,18-24,Kochi,minimalist|classic,Off-White|Coral|Grey,2000,S,38,10,False,True,2025-10-10
+U0213,women,18-24,Hyderabad,bohemian|party,Maroon|Emerald Green|Dark Wash Denim,5000,L,32,8,False,True,2025-07-08
+U0214,men,18-24,Lucknow,bohemian|minimalist,Grey|Black|Cream,3000,XXL,36,8,True,True,2026-01-01
+U0215,women,18-24,Lucknow,ethnic|streetwear,Orange|Red|Black,2000,XS,28,8,True,True,2024-09-07
+U0216,women,25-34,Bhagalpur,minimalist|bohemian,Off-White|Khaki|Navy,3000,S,30,5,False,True,2025-01-27
+U0217,women,25-34,Ahmedabad,minimalist|formal,Blush Pink|Beige|White,1500,L,28,6,False,True,2025-08-13
+U0218,women,18-24,Pune,streetwear|party,Royal Blue|Dark Wash Denim|Lilac,1500,L,30,6,False,True,2026-05-31
+U0219,men,25-34,Kolkata,minimalist|bohemian,Rust|Off-White|Grey,5000,M,36,9,False,True,2024-11-20
+U0220,women,18-24,Chennai,minimalist|bohemian,Tan|Off-White|Emerald Green,3000,L,30,5,False,True,2025-02-24
+U0221,men,18-24,Ranchi,streetwear|sporty|classic,Orange|Royal Blue|Dark Wash Denim,3000,S,38,9,False,True,2024-12-06
+U0222,women,35-44,Ahmedabad,streetwear|sporty,White|Powder Blue|Light Wash Denim,3000,M,28,5,False,True,2024-10-17
+U0223,men,25-34,Kolkata,ethnic|bohemian|streetwear,Red|White|Powder Blue,5000,XL,34,7,False,True,2025-02-21
+U0224,men,35-44,Hyderabad,ethnic|party,Orange|Royal Blue|Rust,2000,XXL,36,8,False,True,2025-10-15
+U0225,women,25-34,Delhi,party|ethnic|minimalist,Khaki|Mustard|Orange,3000,S,32,8,False,True,2026-06-03
+U0226,men,18-24,Patna,bohemian|formal,Rust|Maroon|Light Wash Denim,3000,M,36,7,False,True,2026-06-22
+U0227,women,18-24,Ranchi,ethnic|party|minimalist,Khaki|Powder Blue|Off-White,1500,M,32,4,False,True,2025-01-07
+U0228,men,25-34,Kochi,ethnic|streetwear,Brown|Emerald Green|Beige,1500,S,36,8,False,True,2025-01-06
+U0229,men,25-34,Kochi,bohemian|party|casual,Emerald Green|Orange|Tan,3000,XXL,36,10,False,True,2024-09-15
+U0230,men,18-24,Hyderabad,bohemian|minimalist|ethnic,Off-White|Light Wash Denim|Black,2000,L,32,8,False,True,2025-02-10
+U0231,women,18-24,Mumbai,ethnic|streetwear,Sage Green|Mustard|Dark Wash Denim,2000,M,28,7,False,True,2025-01-11
+U0232,women,35-44,Kochi,ethnic|classic,Off-White|Mint Green|Orange,2000,XL,34,8,True,True,2025-04-27
+U0233,women,35-44,Kolkata,formal|classic,Terracotta|Mustard|Peach,5000,S,34,5,False,True,2025-04-07
+U0234,men,35-44,Pune,party|minimalist|casual,Grey|Navy|Fuchsia,3000,XL,30,10,False,True,2025-01-16
+U0235,women,25-34,Kolkata,streetwear|sporty|party,White|Tan|Off-White,5000,XL,34,8,False,True,2026-08-19
+U0236,men,18-24,Ranchi,streetwear|sporty|party,Fuchsia|Peach|Teal,5000,L,30,11,False,True,2025-07-23
+U0237,women,25-34,Chennai,ethnic|classic,Red|Cream|Royal Blue,3000,XL,30,6,False,True,2024-10-30
+U0238,women,18-24,Pune,party|classic,Red|Light Wash Denim|Grey,1500,S,32,8,False,True,2024-09-23
+U0239,men,25-34,Bhagalpur,ethnic|bohemian|minimalist,Olive|Terracotta|Lilac,2000,XXL,38,8,False,True,2026-05-15
+U0240,women,18-24,Kochi,formal|classic,Black|Terracotta|Light Wash Denim,1500,S,28,7,False,True,2026-01-16
+U0241,men,25-34,Delhi,classic|formal,Beige|Light Wash Denim|Orange,5000,M,36,8,False,True,2024-11-14
+U0242,women,18-24,Hyderabad,minimalist|formal,Powder Blue|White|Navy,3000,XS,32,4,False,True,2025-10-23
+U0243,men,25-34,Pune,bohemian|ethnic|formal,Cream|Lemon Yellow|Blush Pink,1500,M,34,10,False,True,2025-12-02
+U0244,women,18-24,Lucknow,bohemian|classic|formal,Olive|Blush Pink|Rust,3000,S,32,7,False,True,2025-10-31
+U0245,men,18-24,Kochi,streetwear|sporty|casual,Terracotta|Grey|Lavender,3000,L,36,7,False,True,2026-09-16
+U0246,women,25-34,Chennai,party|minimalist|casual,Lilac|Navy|Fuchsia,3000,S,34,6,False,True,2025-08-18
+U0247,men,18-24,Bhagalpur,streetwear|sporty|minimalist,Powder Blue|Lilac|Red,1500,XL,32,8,False,True,2024-12-22
+U0248,women,25-34,Delhi,classic|formal,Off-White|Terracotta|Royal Blue,1500,S,34,4,False,True,2025-11-16
+U0249,men,25-34,Bhagalpur,streetwear|sporty,Emerald Green|Black|Beige,5000,L,36,9,True,True,2025-11-25
+U0250,women,18-24,Delhi,streetwear|sporty,Coral|Peach|Grey,5000,XS,34,5,False,True,2024-12-26
+U0251,men,35-44,Hyderabad,streetwear|casual,Olive|Khaki|Teal,1500,M,38,7,True,True,2026-06-04
+U0252,men,25-34,Delhi,minimalist|sporty|casual,Dark Wash Denim|Tan|Light Wash Denim,1500,M,30,10,False,True,2026-03-04
+U0253,men,18-24,Pune,ethnic|minimalist|sporty,Rust|Royal Blue|Cream,2000,XXL,34,10,False,True,2025-10-11
+U0254,women,18-24,Ahmedabad,streetwear|sporty|party,Emerald Green|Sage Green|White,2000,XL,30,5,True,True,2026-07-18
+U0255,women,35-44,Bengaluru,classic|formal,Dark Wash Denim|Light Wash Denim|White,3000,M,32,5,False,True,2025-08-15
+U0256,men,25-34,Kochi,minimalist|sporty,Black|Tan|Rust,2000,S,36,10,False,True,2024-10-12
+U0257,women,25-34,Hyderabad,streetwear|sporty|ethnic,Light Wash Denim|Coral|Off-White,1500,S,30,6,False,True,2025-12-16
+U0258,men,25-34,Delhi,streetwear|sporty,Sage Green|Red|Teal,1500,M,38,11,False,True,2025-02-04
+U0259,men,45+,Patna,classic|formal,Brown|Light Wash Denim|Beige,2000,L,30,7,False,True,2026-08-18
+U0260,men,18-24,Patna,party|sporty,Terracotta|Royal Blue|Fuchsia,2000,XXL,30,11,False,True,2024-10-02
+U0261,women,18-24,Mumbai,bohemian|minimalist,Blush Pink|Black|Orange,3000,S,28,5,False,True,2025-04-19
+U0262,men,18-24,Ranchi,classic|party|formal,White|Fuchsia|Navy,5000,XXL,30,8,False,True,2026-06-21
+U0263,women,25-34,Patna,bohemian|minimalist,Terracotta|Olive|Khaki,1500,XS,28,7,False,True,2026-04-02
+U0264,men,25-34,Jaipur,minimalist|sporty|casual,Lilac|Coral|Dark Wash Denim,5000,M,36,11,False,True,2025-03-27
+U0265,men,35-44,Jaipur,party|minimalist,Coral|Orange|Tan,2000,M,36,11,False,True,2026-01-22
+U0266,men,25-34,Chennai,ethnic|bohemian|party,Brown|Mustard|Emerald Green,5000,M,36,9,False,True,2026-03-27
+U0267,women,35-44,Mumbai,minimalist|bohemian,Emerald Green|Black|Terracotta,1500,L,32,5,False,True,2025-02-15
+U0268,men,25-34,Bhagalpur,minimalist|ethnic,Powder Blue|Tan|Fuchsia,2000,XXL,32,10,True,True,2026-01-27
+U0269,women,35-44,Pune,party|ethnic|sporty,Beige|Orange|Mustard,3000,L,34,7,False,True,2026-08-10
+U0270,men,35-44,Jaipur,ethnic|bohemian,Tan|Sage Green|Navy,2000,L,34,9,False,True,2025-03-26
+U0271,women,18-24,Patna,bohemian|classic,Lilac|Blush Pink|Terracotta,2000,S,30,5,False,True,2025-06-22
+U0272,women,25-34,Patna,sporty|streetwear|casual,Cream|Lemon Yellow|Sage Green,5000,L,32,6,False,True,2026-09-14
+U0273,women,25-34,Jaipur,streetwear|sporty|party,Light Wash Denim|Navy|Blush Pink,1500,XS,34,6,False,True,2026-01-07
+U0274,women,18-24,Hyderabad,minimalist|casual,Navy|White|Cream,5000,M,30,7,False,True,2025-04-14
+U0275,men,25-34,Mumbai,streetwear|sporty|ethnic,Dark Wash Denim|Light Wash Denim|Maroon,3000,M,36,11,False,True,2026-03-31
+U0276,men,35-44,Ahmedabad,classic|formal,Light Wash Denim|Peach|Beige,1500,XL,38,8,True,True,2025-11-20
+U0277,men,25-34,Jaipur,minimalist|casual|formal,Emerald Green|Dark Wash Denim|Orange,3000,M,32,10,False,True,2025-02-16
+U0278,women,18-24,Ranchi,ethnic|bohemian|formal,Orange|White|Off-White,2000,XS,28,4,False,True,2025-09-13
+U0279,women,25-34,Kolkata,ethnic|streetwear|sporty,Red|Brown|Olive,1500,M,30,5,True,True,2025-06-05
+U0280,men,25-34,Kolkata,bohemian|sporty|streetwear,Light Wash Denim|Coral|Mint Green,3000,XXL,34,11,False,True,2024-11-23
+U0281,women,25-34,Bhagalpur,bohemian|minimalist,Tan|Sage Green|Lemon Yellow,2000,S,32,6,False,True,2025-09-08
+U0282,men,18-24,Bengaluru,classic|formal|bohemian,Off-White|Light Wash Denim|Rust,2000,XL,30,11,False,True,2026-06-12
+U0283,men,25-34,Bhagalpur,ethnic|formal|classic,Fuchsia|Blush Pink|Tan,5000,L,32,7,False,True,2026-03-01
+U0284,women,18-24,Delhi,ethnic|minimalist,Terracotta|Beige|Maroon,2000,XS,30,7,False,True,2025-08-31
+U0285,men,18-24,Ranchi,ethnic|bohemian|streetwear,Teal|Maroon|Beige,3000,S,38,9,False,True,2024-11-26
+U0286,women,25-34,Jaipur,classic|formal,Tan|Khaki|Beige,3000,XS,34,8,False,True,2026-01-03
+U0287,men,18-24,Kochi,minimalist|sporty,Lemon Yellow|Orange|Royal Blue,3000,L,30,8,False,True,2024-11-14
+U0288,men,35-44,Ahmedabad,minimalist|party,Rust|Khaki|Peach,1500,XL,32,7,False,True,2024-11-15
+U0289,women,18-24,Bhagalpur,minimalist|sporty|classic,Lavender|Orange|Grey,1500,XS,32,8,False,True,2026-08-18
+U0290,women,25-34,Bengaluru,party|minimalist|casual,Tan|White|Fuchsia,5000,M,32,5,False,True,2026-04-07
+U0291,women,25-34,Kolkata,minimalist|classic|casual,Grey|White|Tan,3000,S,28,5,False,True,2025-08-27
+U0292,women,35-44,Pune,party|minimalist,Peach|Coral|Dark Wash Denim,2000,M,28,6,False,True,2026-01-03
+U0293,men,25-34,Patna,ethnic|formal,Teal|Off-White|Black,1500,S,32,11,False,True,2026-04-04
+U0294,women,25-34,Pune,bohemian|classic,Powder Blue|White|Brown,2000,S,34,7,False,True,2024-11-16
+U0295,women,18-24,Bhagalpur,formal|classic|minimalist,Navy|Red|Grey,3000,L,32,6,False,True,2025-09-04
+U0296,men,18-24,Bengaluru,streetwear|sporty|party,Fuchsia|Terracotta|Black,3000,L,34,11,False,True,2026-05-19
+U0297,women,18-24,Chennai,ethnic|classic,Lavender|Teal|Grey,1500,XS,34,4,False,True,2025-05-07
+U0298,men,18-24,Ranchi,minimalist|casual,Lemon Yellow|Royal Blue|Red,2000,M,30,8,False,True,2024-12-22
+U0299,men,18-24,Delhi,ethnic|bohemian,Off-White|Emerald Green|Orange,2000,M,38,8,False,True,2024-11-11
+U0300,women,25-34,Bhagalpur,ethnic|formal|party,Royal Blue|Olive|Red,5000,M,28,5,False,True,2025-02-16
+U0301,women,18-24,Lucknow,streetwear|party,Sage Green|Lemon Yellow|Light Wash Denim,3000,XS,28,5,False,True,2025-02-12
+U0302,women,18-24,Delhi,classic|formal|casual,Cream|Royal Blue|Beige,3000,XS,28,7,False,True,2026-03-02
+U0303,women,18-24,Bhagalpur,streetwear|sporty,Light Wash Denim|Mustard|Powder Blue,3000,XS,34,6,False,True,2025-06-21
+U0304,women,25-34,Bhagalpur,classic|formal,Cream|Maroon|Mustard,5000,L,30,7,False,True,2026-02-12
+U0305,women,25-34,Bengaluru,streetwear|sporty,Dark Wash Denim|White|Maroon,3000,XL,28,4,False,True,2025-07-11
+U0306,men,25-34,Bengaluru,classic|formal,Emerald Green|Rust|Dark Wash Denim,5000,XXL,38,8,False,True,2025-03-16
+U0307,men,18-24,Bengaluru,ethnic|party|classic,Royal Blue|Mint Green|Mustard,1500,L,32,8,False,True,2026-02-18
+U0308,women,18-24,Lucknow,party|classic,Fuchsia|Terracotta|Coral,2000,L,32,5,False,True,2026-08-27
+U0309,women,18-24,Bhagalpur,classic|formal,Lilac|Grey|Black,3000,S,28,6,False,True,2026-09-16
+U0310,women,25-34,Mumbai,ethnic|bohemian|classic,Coral|Emerald Green|Light Wash Denim,5000,XS,34,6,False,True,2024-12-28
+U0311,women,18-24,Ahmedabad,streetwear|sporty,White|Lilac|Royal Blue,3000,L,28,4,False,True,2026-08-25
+U0312,men,18-24,Lucknow,party|ethnic|minimalist,Orange|Black|Light Wash Denim,5000,L,34,10,False,True,2026-01-05
+U0313,men,25-34,Ranchi,streetwear|sporty,Brown|Tan|Peach,2000,XL,34,11,False,True,2025-08-22
+U0314,men,18-24,Lucknow,ethnic|party|classic,Terracotta|Mustard|Rust,3000,M,30,9,False,True,2025-08-18
+U0315,men,25-34,Kolkata,bohemian|party|minimalist,Fuchsia|Teal|Sage Green,2000,XL,36,10,False,True,2025-10-08
+U0316,men,18-24,Bhagalpur,ethnic|classic|formal,Tan|Beige|Emerald Green,3000,XL,36,7,False,True,2025-11-17
+U0317,men,25-34,Chandigarh,minimalist|sporty,Emerald Green|Brown|Lilac,1500,M,36,9,False,True,2026-04-25
+U0318,men,25-34,Bengaluru,classic|formal,Powder Blue|Lilac|Beige,3000,XXL,32,8,False,True,2026-02-07
+U0319,men,45+,Jaipur,streetwear|sporty,Royal Blue|Red|Fuchsia,2000,M,34,9,False,True,2025-12-11
+U0320,men,45+,Pune,party|classic|formal,Cream|White|Tan,1500,M,34,11,False,True,2025-07-18
+U0321,women,18-24,Jaipur,minimalist|bohemian,Grey|Mustard|Cream,2000,XL,34,7,False,True,2024-11-24
+U0322,women,25-34,Ahmedabad,classic|formal,Navy|Emerald Green|Maroon,2000,XS,32,4,False,True,2025-11-04
+U0323,women,25-34,Lucknow,bohemian|minimalist|casual,Royal Blue|Black|Sage Green,5000,M,30,5,False,True,2026-03-21
+U0324,men,18-24,Jaipur,minimalist|casual,Teal|Cream|Fuchsia,1500,S,34,8,False,True,2025-11-17
+U0325,men,35-44,Lucknow,party|ethnic,Orange|Grey|Fuchsia,5000,S,38,8,False,True,2026-03-04
+U0326,men,18-24,Ranchi,classic|formal|bohemian,Grey|Lemon Yellow|Orange,3000,M,34,11,False,True,2026-06-23
+U0327,women,45+,Jaipur,classic|formal|ethnic,Sage Green|Light Wash Denim|Olive,2000,M,34,5,False,True,2025-03-09
+U0328,men,25-34,Hyderabad,minimalist|bohemian,Cream|Lemon Yellow|Terracotta,3000,L,36,9,True,True,2025-03-14
+U0329,women,25-34,Kolkata,bohemian|minimalist|casual,Lemon Yellow|Mustard|Blush Pink,2000,XL,30,8,False,True,2025-04-24
+U0330,women,35-44,Jaipur,streetwear|sporty,Khaki|Mustard|Light Wash Denim,1500,XL,34,4,False,True,2024-10-11
+U0331,women,18-24,Ranchi,classic|formal,Brown|Mint Green|Navy,3000,S,32,4,False,True,2025-12-29
+U0332,women,45+,Delhi,ethnic|bohemian,Tan|Maroon|Dark Wash Denim,1500,L,34,5,False,True,2025-05-21
+U0333,men,35-44,Chandigarh,ethnic|bohemian,Coral|Emerald Green|Dark Wash Denim,2000,S,36,8,False,True,2025-05-25
+U0334,women,18-24,Kolkata,minimalist|casual|sporty,Rust|Powder Blue|Black,2000,XL,34,8,False,True,2025-06-20
+U0335,women,18-24,Jaipur,streetwear|classic|sporty,Light Wash Denim|Coral|Dark Wash Denim,2000,M,30,5,False,True,2025-12-06
+U0336,women,18-24,Bhagalpur,streetwear|sporty,Light Wash Denim|Peach|White,3000,S,32,5,True,True,2024-12-10
+U0337,women,35-44,Chennai,party|classic|formal,Fuchsia|Red|Coral,1500,S,30,6,False,True,2025-12-01
+U0338,men,18-24,Delhi,streetwear|sporty|classic,Powder Blue|Light Wash Denim|Lilac,2000,L,36,8,False,True,2025-09-09
+U0339,men,35-44,Lucknow,bohemian|party,Teal|Dark Wash Denim|Beige,3000,XL,34,7,False,True,2026-08-06
+U0340,women,35-44,Hyderabad,bohemian|minimalist|sporty,Peach|Tan|Brown,3000,XL,34,6,False,True,2024-10-22
+U0341,women,35-44,Delhi,minimalist|classic,Beige|Black|Olive,2000,XS,32,8,False,True,2025-04-27
+U0342,women,18-24,Kolkata,classic|formal|streetwear,Tan|Lemon Yellow|Emerald Green,3000,L,28,7,False,True,2025-09-21
+U0343,men,25-34,Bengaluru,bohemian|formal,Terracotta|Black|Navy,1500,L,38,7,False,True,2025-08-28
+U0344,men,45+,Kochi,streetwear|party|sporty,Dark Wash Denim|Orange|Powder Blue,2000,XXL,30,8,False,True,2025-01-10
+U0345,women,18-24,Bengaluru,party|ethnic,Teal|Royal Blue|Olive,2000,S,28,8,False,True,2025-06-29
+U0346,men,18-24,Ranchi,streetwear|sporty,Light Wash Denim|Mustard|Off-White,2000,L,34,9,False,True,2024-09-11
+U0347,women,45+,Ranchi,streetwear|sporty,Off-White|Fuchsia|Black,3000,XS,34,7,False,True,2024-08-19
+U0348,women,25-34,Ranchi,minimalist|ethnic|casual,White|Dark Wash Denim|Terracotta,1500,L,30,8,False,True,2026-07-08
+U0349,men,18-24,Bengaluru,streetwear|sporty|casual,Mint Green|Cream|Sage Green,2000,S,34,8,True,True,2025-03-14
+U0350,men,25-34,Mumbai,party|streetwear,Mustard|Light Wash Denim|Red,3000,M,36,7,False,True,2026-06-29
+U0351,men,25-34,Chandigarh,minimalist|casual|party,Olive|Cream|Beige,2000,M,38,9,False,True,2026-04-09
+U0352,men,18-24,Patna,minimalist|casual|streetwear,Dark Wash Denim|Navy|White,5000,L,36,7,False,True,2024-09-30
+U0353,men,25-34,Mumbai,bohemian|formal|classic,Terracotta|Fuchsia|Mint Green,2000,M,38,7,False,True,2025-05-21
+U0354,men,18-24,Mumbai,party|ethnic,Light Wash Denim|Rust|Dark Wash Denim,5000,L,30,11,False,True,2024-09-26
+U0355,women,18-24,Pune,minimalist|casual,Black|Khaki|Beige,3000,S,30,8,False,True,2024-11-28
+U0356,men,45+,Patna,streetwear|sporty,White|Dark Wash Denim|Coral,5000,L,38,10,False,True,2026-01-05
+U0357,women,45+,Hyderabad,bohemian|classic,Rust|Peach|Black,3000,M,32,7,False,True,2026-06-10
+U0358,women,25-34,Jaipur,ethnic|classic|formal,Off-White|Terracotta|Brown,2000,XS,34,8,False,True,2026-09-12
+U0359,men,18-24,Mumbai,classic|formal,Navy|Rust|Royal Blue,5000,XL,30,8,False,True,2026-03-21
+U0360,men,35-44,Chandigarh,party|ethnic,Light Wash Denim|Khaki|Peach,1500,M,38,9,False,True,2025-05-30
+U0361,women,25-34,Ahmedabad,ethnic|bohemian|party,Orange|Dark Wash Denim|Red,3000,S,32,5,False,True,2025-03-18
+U0362,women,35-44,Hyderabad,minimalist|streetwear,White|Grey|Powder Blue,5000,S,32,5,False,True,2026-03-04
+U0363,men,25-34,Kolkata,ethnic|formal,Teal|Dark Wash Denim|Terracotta,5000,XL,36,11,False,True,2024-09-09
+U0364,women,25-34,Patna,streetwear|sporty,Blush Pink|Sage Green|Tan,1500,XL,32,5,False,True,2024-11-14
+U0365,men,35-44,Chandigarh,minimalist|casual|party,Royal Blue|Off-White|White,2000,S,38,7,False,True,2025-09-13
+U0366,men,45+,Jaipur,bohemian|minimalist,Powder Blue|Grey|Peach,2000,XL,38,8,False,True,2025-04-13
+U0367,women,18-24,Hyderabad,ethnic|bohemian|minimalist,Mint Green|Red|Black,2000,S,34,6,False,True,2024-08-26
+U0368,men,18-24,Ahmedabad,party|minimalist,Royal Blue|Coral|Lilac,3000,S,34,7,False,True,2025-12-14
+U0369,women,25-34,Chennai,bohemian|streetwear,Olive|Peach|Blush Pink,2000,L,30,4,False,True,2025-05-17
+U0370,men,45+,Mumbai,minimalist|bohemian|casual,Light Wash Denim|Tan|Emerald Green,1500,S,30,8,False,True,2026-09-17
+U0371,men,18-24,Mumbai,bohemian|ethnic,Sage Green|Dark Wash Denim|Brown,5000,XXL,36,7,False,True,2024-10-12
+U0372,men,45+,Pune,bohemian|minimalist|formal,Emerald Green|Cream|Off-White,1500,XL,30,7,False,True,2026-02-25
+U0373,women,25-34,Pune,classic|formal|bohemian,Maroon|Fuchsia|Tan,3000,S,28,8,False,True,2024-12-11
+U0374,women,35-44,Bhagalpur,classic|formal|ethnic,White|Off-White|Brown,3000,M,34,5,False,True,2026-03-29
+U0375,men,18-24,Chennai,ethnic|bohemian|minimalist,Grey|Red|Terracotta,2000,M,32,10,False,True,2025-11-15
+U0376,men,18-24,Patna,classic|formal|ethnic,Red|Powder Blue|Fuchsia,3000,XL,32,7,False,True,2025-04-24
+U0377,women,18-24,Lucknow,minimalist|formal,Grey|Black|Olive,3000,M,34,7,False,True,2025-08-20
+U0378,men,18-24,Bhagalpur,ethnic|bohemian,Blush Pink|Black|Orange,5000,XXL,38,8,False,True,2025-12-19
+U0379,men,18-24,Bengaluru,party|minimalist,Brown|Orange|Navy,2000,XXL,36,9,False,True,2025-02-11
+U0380,women,25-34,Bengaluru,streetwear|sporty|party,Sage Green|Black|Peach,1500,L,34,6,False,True,2024-08-23
+U0381,women,25-34,Kochi,bohemian|classic,Maroon|Mint Green|Grey,2000,S,32,6,False,True,2024-09-17
+U0382,men,25-34,Kochi,classic|formal,Tan|Dark Wash Denim|Beige,5000,S,34,11,False,True,2024-09-27
+U0383,men,18-24,Patna,classic|formal|bohemian,Terracotta|Beige|Orange,1500,M,38,8,False,True,2025-10-16
+U0384,men,35-44,Chandigarh,streetwear|sporty|party,Mustard|Navy|Light Wash Denim,1500,XL,30,11,False,True,2024-10-10
+U0385,women,35-44,Lucknow,ethnic|classic,White|Khaki|Olive,2000,XS,32,8,False,True,2025-08-20
+U0386,men,18-24,Ahmedabad,minimalist|formal,Terracotta|Beige|Light Wash Denim,2000,L,36,7,False,True,2024-10-15
+U0387,men,18-24,Patna,ethnic|bohemian|party,Brown|Orange|Lilac,2000,XL,32,11,False,True,2026-02-25
+U0388,men,45+,Hyderabad,classic|formal,Orange|Navy|Royal Blue,2000,XL,32,8,False,True,2024-09-12
+U0389,women,18-24,Bengaluru,classic|formal,White|Light Wash Denim|Tan,3000,XS,32,5,True,True,2025-04-02
+U0390,men,18-24,Patna,bohemian|ethnic|party,Navy|Grey|Light Wash Denim,3000,S,32,7,False,True,2026-08-08
+U0391,women,25-34,Delhi,minimalist|party|formal,White|Red|Coral,2000,S,30,4,False,True,2025-09-25
+U0392,women,35-44,Delhi,streetwear|sporty,Off-White|Dark Wash Denim|Teal,2000,L,32,7,False,True,2024-11-12
+U0393,women,25-34,Pune,bohemian|streetwear,Olive|Dark Wash Denim|Brown,2000,M,30,6,True,True,2026-01-25
+U0394,women,35-44,Lucknow,ethnic|minimalist|casual,Fuchsia|Teal|Terracotta,2000,XL,28,7,False,True,2026-04-30
+U0395,women,35-44,Kolkata,ethnic|classic,Red|Teal|Lemon Yellow,1500,XS,32,7,False,True,2026-03-07
+U0396,women,18-24,Bhagalpur,minimalist|sporty,Dark Wash Denim|Off-White|Navy,3000,XL,32,7,False,True,2025-04-03
+U0397,women,18-24,Jaipur,classic|formal,White|Maroon|Red,3000,XS,34,6,False,True,2024-09-11
+U0398,men,45+,Jaipur,streetwear|sporty,Royal Blue|Lavender|Mint Green,2000,XL,34,8,False,True,2026-01-25
+U0399,women,35-44,Chennai,streetwear|sporty,Dark Wash Denim|Light Wash Denim|Orange,2000,XL,34,5,False,True,2025-03-11
+U0400,men,18-24,Ahmedabad,party|classic|formal,Fuchsia|Off-White|White,2000,M,38,7,False,True,2026-01-15
+U0401,men,25-34,Jaipur,classic|formal,Teal|Royal Blue|Light Wash Denim,3000,L,38,10,True,True,2026-03-14
+U0402,men,18-24,Bhagalpur,ethnic|streetwear|casual,Powder Blue|Coral|Royal Blue,5000,XXL,36,8,False,True,2024-08-25
+U0403,men,25-34,Mumbai,bohemian|streetwear|party,Teal|Peach|Light Wash Denim,1500,L,38,9,False,True,2026-08-15
+U0404,men,35-44,Chandigarh,party|ethnic|formal,Fuchsia|Mint Green|Emerald Green,3000,S,32,10,False,True,2024-10-12
+U0405,men,35-44,Pune,ethnic|minimalist|casual,Maroon|Light Wash Denim|Red,5000,M,36,7,False,True,2025-02-07
+U0406,women,18-24,Kolkata,party|bohemian,Coral|Blush Pink|Lavender,3000,XL,34,5,False,True,2025-05-06
+U0407,women,25-34,Bengaluru,classic|formal|minimalist,Sage Green|Off-White|Beige,1500,S,28,7,False,True,2024-12-11
+U0408,women,18-24,Mumbai,party|ethnic,Teal|Orange|Navy,3000,XL,32,8,False,True,2025-06-01
+U0409,women,25-34,Mumbai,minimalist|casual,Mint Green|Maroon|Tan,2000,M,34,8,False,True,2024-09-23
+U0410,women,25-34,Delhi,minimalist|formal,Navy|Olive|Royal Blue,5000,M,32,7,False,True,2026-08-30
+U0411,women,35-44,Delhi,ethnic|party,Maroon|Cream|Blush Pink,5000,XS,30,4,False,True,2025-03-25
+U0412,women,18-24,Jaipur,minimalist|formal,Emerald Green|Terracotta|Cream,3000,XL,32,8,False,True,2025-11-11
+U0413,men,25-34,Ranchi,classic|formal,Brown|Sage Green|Off-White,1500,M,38,10,False,True,2025-12-22
+U0414,men,18-24,Hyderabad,bohemian|ethnic,Royal Blue|Red|Cream,1500,M,34,8,False,True,2025-05-24
+U0415,men,25-34,Kolkata,bohemian|classic|formal,Terracotta|Dark Wash Denim|Red,1500,S,38,7,False,True,2026-04-29
+U0416,men,18-24,Chennai,classic|formal,Off-White|Grey|Red,5000,M,34,8,False,True,2025-01-01
+U0417,men,35-44,Jaipur,bohemian|streetwear,Dark Wash Denim|Cream|Sage Green,1500,M,30,8,False,True,2026-03-08
+U0418,men,35-44,Ahmedabad,minimalist|ethnic,Dark Wash Denim|Off-White|Emerald Green,1500,M,38,8,False,True,2024-09-16
+U0419,women,35-44,Lucknow,classic|formal|streetwear,Light Wash Denim|Dark Wash Denim|Off-White,2000,S,30,7,False,True,2026-05-11
+U0420,men,18-24,Pune,minimalist|bohemian,Black|Cream|Grey,1500,S,36,7,False,True,2026-01-06
+U0421,women,35-44,Hyderabad,classic|formal,Brown|Dark Wash Denim|White,2000,M,34,7,True,True,2025-07-22
+U0422,women,18-24,Lucknow,minimalist|casual,Mustard|Blush Pink|Tan,2000,XL,34,5,False,True,2024-08-18
+U0423,men,18-24,Ranchi,minimalist|casual,Cream|Grey|Tan,1500,S,36,11,False,True,2025-04-20
+U0424,women,25-34,Patna,minimalist|casual|sporty,White|Dark Wash Denim|Royal Blue,5000,XS,30,4,False,True,2026-08-05
+U0425,men,25-34,Chennai,ethnic|minimalist,Black|Brown|Maroon,1500,XL,34,9,False,True,2026-07-20
+U0426,men,35-44,Patna,party|ethnic|classic,Dark Wash Denim|Coral|Maroon,1500,XL,36,11,False,True,2024-09-17
+U0427,men,35-44,Delhi,minimalist|casual|formal,Emerald Green|Tan|Brown,1500,XL,34,11,False,True,2026-07-06
+U0428,women,25-34,Kochi,bohemian|party|classic,Off-White|Coral|Peach,2000,M,32,8,False,True,2025-09-08
+U0429,women,25-34,Kochi,bohemian|party|classic,Cream|Black|Brown,5000,S,30,6,False,True,2025-01-17
+U0430,women,25-34,Patna,minimalist|sporty,Grey|Lavender|Black,3000,L,32,6,False,True,2026-09-06
+U0431,women,25-34,Ranchi,streetwear|sporty|casual,Lilac|Lavender|Emerald Green,3000,M,30,6,False,True,2025-05-20
+U0432,men,35-44,Lucknow,classic|formal,Black|Lavender|Tan,1500,XXL,32,7,False,True,2026-05-17
+U0433,men,18-24,Lucknow,minimalist|sporty,Peach|Lavender|Cream,1500,L,32,10,False,True,2025-06-18
+U0434,men,45+,Jaipur,formal|classic,Lemon Yellow|Mustard|Navy,3000,L,38,10,False,True,2026-06-22
+U0435,women,45+,Lucknow,streetwear|sporty|casual,Black|Blush Pink|Peach,5000,XS,32,4,False,True,2025-01-25
+U0436,women,18-24,Delhi,ethnic|bohemian,Fuchsia|Khaki|Olive,2000,S,32,7,False,True,2025-05-15
+U0437,women,35-44,Hyderabad,party|classic,Tan|Dark Wash Denim|Navy,5000,M,28,7,False,True,2024-11-25
+U0438,men,25-34,Pune,bohemian|classic,Tan|Mint Green|Maroon,3000,XL,34,7,False,True,2025-03-22
+U0439,women,45+,Kolkata,minimalist|ethnic,Blush Pink|Beige|Olive,3000,XS,28,4,False,True,2025-03-20
+U0440,women,35-44,Bengaluru,party|sporty|minimalist,Grey|Olive|Coral,1500,XS,34,5,False,True,2024-12-27
+U0441,men,18-24,Kolkata,streetwear|sporty,Red|Light Wash Denim|Mint Green,2000,XXL,34,9,False,True,2026-07-26
+U0442,women,18-24,Lucknow,minimalist|casual,Fuchsia|Cream|Light Wash Denim,5000,XL,32,8,True,True,2026-07-18
+U0443,men,25-34,Mumbai,minimalist|bohemian,Black|Lavender|Beige,1500,XXL,38,9,True,True,2026-07-07
+U0444,men,35-44,Hyderabad,ethnic|minimalist|bohemian,Rust|Blush Pink|Lilac,1500,XXL,38,7,False,True,2026-06-01
+U0445,women,18-24,Ranchi,classic|formal,Beige|Royal Blue|Coral,2000,L,28,4,False,True,2025-05-09
+U0446,women,35-44,Hyderabad,streetwear|sporty,Rust|Navy|Mustard,1500,L,30,5,False,True,2026-07-25
+U0447,women,18-24,Mumbai,streetwear|sporty,Mustard|Peach|Mint Green,2000,S,32,7,False,True,2026-08-10
+U0448,men,18-24,Hyderabad,party|streetwear,Fuchsia|Sage Green|Mustard,3000,S,30,10,False,True,2026-05-07
+U0449,women,18-24,Bhagalpur,minimalist|party|casual,Teal|Maroon|Emerald Green,2000,L,34,4,False,True,2026-06-14
+U0450,women,35-44,Jaipur,bohemian|minimalist,Peach|Lavender|Terracotta,2000,L,32,6,False,True,2026-07-01
+U0451,women,25-34,Chandigarh,minimalist|casual,Olive|Sage Green|Fuchsia,1500,L,30,6,False,True,2026-03-16
+U0452,women,25-34,Bengaluru,ethnic|party,Blush Pink|Light Wash Denim|Dark Wash Denim,3000,L,30,5,False,True,2026-02-06
+U0453,men,35-44,Chennai,sporty|streetwear,Brown|Lemon Yellow|Fuchsia,5000,M,34,8,False,True,2026-08-02
+U0454,men,35-44,Ahmedabad,bohemian|party,Fuchsia|Sage Green|Olive,1500,XXL,32,7,False,True,2024-11-15
+U0455,women,25-34,Lucknow,party|bohemian|ethnic,Teal|Red|Fuchsia,3000,M,32,7,False,True,2025-02-28
+U0456,men,25-34,Bhagalpur,bohemian|minimalist,Red|Tan|Navy,3000,XL,36,7,False,True,2025-08-23
+U0457,men,25-34,Hyderabad,bohemian|minimalist|casual,Lilac|Brown|Black,5000,L,34,9,False,True,2025-01-09
+U0458,men,25-34,Chandigarh,bohemian|ethnic,Maroon|Rust|Cream,2000,XXL,38,11,True,True,2026-05-26
+U0459,men,35-44,Kolkata,bohemian|classic,Cream|Red|Maroon,5000,S,32,7,False,True,2024-10-19
+U0460,men,35-44,Chennai,streetwear|sporty,Beige|Mint Green|Light Wash Denim,3000,S,38,9,True,True,2024-11-08
+U0461,women,45+,Bengaluru,streetwear|sporty,Dark Wash Denim|Blush Pink|Grey,1500,L,32,5,False,True,2024-08-23
+U0462,men,25-34,Bengaluru,streetwear|sporty,Lavender|Fuchsia|Grey,3000,XXL,30,8,False,True,2025-05-15
+U0463,women,25-34,Chennai,minimalist|casual|party,Royal Blue|Red|Blush Pink,3000,XL,34,7,False,True,2026-08-06
+U0464,men,25-34,Ranchi,classic|formal|ethnic,Emerald Green|Rust|Olive,3000,M,38,7,True,True,2024-08-21
+U0465,men,25-34,Chandigarh,streetwear|sporty|party,Royal Blue|Mint Green|Brown,3000,M,38,7,False,True,2025-02-07
+U0466,women,18-24,Bengaluru,minimalist|casual|formal,Dark Wash Denim|Black|Terracotta,3000,S,30,5,False,True,2025-06-27
+U0467,women,45+,Ranchi,streetwear|party,White|Orange|Light Wash Denim,2000,M,28,8,False,True,2025-03-24
+U0468,women,25-34,Bengaluru,classic|formal,Powder Blue|Navy|Rust,3000,XS,34,5,False,True,2025-02-16
+U0469,men,18-24,Lucknow,classic|formal,Beige|Cream|Lemon Yellow,2000,L,36,8,False,True,2026-02-17
+U0470,women,18-24,Bhagalpur,streetwear|sporty,Teal|Blush Pink|Light Wash Denim,2000,S,30,8,False,True,2025-05-13
+U0471,men,18-24,Bengaluru,classic|formal,Powder Blue|Off-White|Lilac,2000,S,34,10,False,True,2025-10-09
+U0472,women,25-34,Patna,party|bohemian,Teal|Terracotta|Maroon,2000,XL,34,8,False,True,2025-11-03
+U0473,men,25-34,Ranchi,ethnic|classic,Maroon|Terracotta|Lemon Yellow,2000,XXL,38,10,False,True,2024-10-08
+U0474,men,18-24,Patna,minimalist|casual,Grey|Navy|Emerald Green,2000,XL,32,7,False,True,2025-01-10
+U0475,women,25-34,Chandigarh,streetwear|sporty,Light Wash Denim|Mint Green|Orange,3000,M,28,8,False,True,2026-05-12
+U0476,women,25-34,Chennai,bohemian|minimalist|ethnic,Fuchsia|Navy|Lilac,2000,M,28,6,False,True,2025-04-28
+U0477,men,18-24,Hyderabad,classic|formal|casual,Tan|Cream|Light Wash Denim,2000,XL,32,10,False,True,2025-11-04
+U0478,women,35-44,Hyderabad,classic|formal,Beige|Grey|Navy,5000,S,28,5,False,True,2024-09-30
+U0479,men,25-34,Pune,bohemian|party,Teal|Coral|Maroon,2000,XL,36,9,False,True,2026-02-24
+U0480,men,25-34,Pune,bohemian|classic,Cream|Sage Green|Emerald Green,2000,S,32,8,False,True,2025-02-20
+U0481,men,18-24,Kolkata,classic|formal,Terracotta|Royal Blue|Coral,5000,S,34,10,False,True,2026-07-04
+U0482,women,25-34,Lucknow,streetwear|sporty,Navy|Dark Wash Denim|Light Wash Denim,2000,M,32,8,False,True,2025-09-24
+U0483,men,25-34,Delhi,minimalist|casual,Teal|White|Dark Wash Denim,2000,L,34,8,False,True,2025-05-22
+U0484,women,25-34,Delhi,bohemian|ethnic,Coral|Beige|Olive,3000,S,32,4,False,True,2025-07-20
+U0485,men,18-24,Patna,streetwear|sporty,White|Lavender|Terracotta,3000,L,30,10,False,True,2026-05-07
+U0486,men,18-24,Kolkata,party|ethnic,Maroon|Brown|Teal,3000,XXL,34,9,False,True,2024-09-23
+U0487,women,25-34,Kochi,classic|formal,Brown|White|Royal Blue,1500,L,34,7,False,True,2025-06-05
+U0488,women,25-34,Kochi,party|ethnic,Red|Royal Blue|Emerald Green,2000,L,32,7,False,True,2025-05-22
+U0489,women,18-24,Delhi,bohemian|streetwear|sporty,Peach|Rust|Mustard,2000,XL,34,6,False,True,2025-11-14
+U0490,women,25-34,Mumbai,formal|classic|minimalist,Lilac|Lavender|Powder Blue,2000,M,28,5,False,True,2025-03-22
+U0491,men,35-44,Pune,streetwear|party,Mustard|Fuchsia|Lavender,2000,M,36,11,False,True,2026-07-14
+U0492,women,18-24,Delhi,minimalist|bohemian,Coral|Lavender|Light Wash Denim,3000,S,28,6,False,True,2025-08-14
+U0493,women,35-44,Jaipur,minimalist|bohemian,Tan|Off-White|Cream,2000,S,34,4,False,True,2025-04-19
+U0494,men,35-44,Ranchi,classic|formal,Light Wash Denim|Terracotta|Tan,3000,L,38,9,False,True,2026-09-15
+U0495,women,18-24,Ahmedabad,party|minimalist|casual,Teal|Coral|Orange,2000,M,30,8,False,True,2024-08-20
+U0496,men,35-44,Pune,classic|formal|streetwear,Peach|Cream|White,2000,XL,34,9,False,True,2026-04-16
+U0497,men,25-34,Mumbai,minimalist|bohemian,Grey|Tan|Lilac,3000,XXL,34,9,False,True,2026-07-11
+U0498,men,25-34,Kochi,ethnic|minimalist,Light Wash Denim|Rust|Mustard,2000,M,36,8,True,True,2025-06-29
+U0499,women,35-44,Bhagalpur,ethnic|party,Mint Green|Orange|Navy,5000,L,34,8,False,True,2025-04-27
+U0500,men,18-24,Hyderabad,ethnic|bohemian,Lemon Yellow|Grey|Royal Blue,3000,M,38,10,False,True,2026-02-11
+U0501,women,35-44,Pune,ethnic|streetwear,Off-White|Orange|White,2000,L,34,5,False,True,2024-10-07
+U0502,men,25-34,Kolkata,minimalist|sporty|casual,Lilac|Tan|Red,3000,L,30,9,False,True,2025-02-19
+U0503,women,25-34,Lucknow,ethnic|streetwear,Cream|Teal|Navy,2000,S,34,7,False,True,2025-11-26
+U0504,women,35-44,Lucknow,party|classic|formal,Rust|Coral|Cream,2000,S,32,5,False,True,2025-04-10
+U0505,men,25-34,Chandigarh,minimalist|sporty,Black|Khaki|Navy,2000,S,30,7,False,True,2026-07-28
+U0506,women,45+,Bengaluru,bohemian|party,Royal Blue|Terracotta|White,5000,XL,34,7,False,True,2026-05-29
+U0507,women,35-44,Mumbai,ethnic|classic,Off-White|Terracotta|Light Wash Denim,2000,XS,34,5,False,True,2026-01-22
+U0508,men,45+,Chandigarh,bohemian|classic|formal,Olive|Beige|Brown,2000,L,34,11,True,True,2026-08-28
+U0509,women,25-34,Kochi,minimalist|party,Off-White|White|Blush Pink,2000,M,32,4,True,True,2024-10-27
+U0510,men,18-24,Mumbai,streetwear|sporty,Red|Off-White|Khaki,1500,M,32,10,False,True,2025-10-14
+U0511,women,45+,Lucknow,ethnic|classic,Tan|Royal Blue|Dark Wash Denim,2000,M,28,8,False,True,2026-05-05
+U0512,women,18-24,Jaipur,party|bohemian,Brown|Emerald Green|Royal Blue,3000,XL,32,5,True,True,2026-03-10
+U0513,women,18-24,Bhagalpur,ethnic|classic|formal,Mint Green|Dark Wash Denim|Mustard,2000,M,28,7,False,True,2026-02-20
+U0514,men,18-24,Ranchi,bohemian|ethnic,Dark Wash Denim|Blush Pink|Tan,3000,XL,34,11,False,True,2025-12-18
+U0515,women,25-34,Bhagalpur,ethnic|party|minimalist,Brown|Coral|Terracotta,5000,L,34,5,False,True,2026-04-13
+U0516,women,45+,Hyderabad,party|formal|classic,Coral|Terracotta|Black,1500,S,34,5,True,True,2024-10-22
+U0517,women,18-24,Mumbai,classic|formal,Beige|Red|Off-White,2000,XL,28,5,False,True,2025-02-02
+U0518,women,25-34,Bengaluru,classic|formal|ethnic,Off-White|Maroon|Beige,1500,XS,32,6,False,True,2024-11-06
+U0519,women,25-34,Bhagalpur,streetwear|sporty,Terracotta|Lemon Yellow|Light Wash Denim,2000,L,34,7,False,True,2024-10-13
+U0520,women,18-24,Kochi,bohemian|streetwear,Royal Blue|Coral|Mustard,3000,L,28,6,False,True,2026-06-12
+U0521,women,35-44,Kolkata,party|streetwear,Emerald Green|Fuchsia|Rust,2000,XS,28,4,False,True,2026-01-30
+U0522,men,18-24,Chandigarh,ethnic|classic|formal,Dark Wash Denim|Navy|Emerald Green,2000,XL,36,10,False,True,2025-02-17
+U0523,men,18-24,Chandigarh,minimalist|casual,Black|Teal|Beige,3000,L,36,9,False,True,2025-01-16
+U0524,men,25-34,Pune,ethnic|party,Blush Pink|Red|Coral,3000,S,36,9,False,True,2025-11-28
+U0525,men,35-44,Patna,minimalist|casual,Rust|Olive|Lavender,1500,XXL,36,9,False,True,2025-06-27
+U0526,men,45+,Mumbai,bohemian|ethnic,Rust|Blush Pink|Fuchsia,3000,S,34,9,False,True,2025-03-08
+U0527,men,35-44,Delhi,ethnic|streetwear,Orange|Lemon Yellow|Powder Blue,5000,XL,38,8,False,True,2026-08-22
+U0528,men,18-24,Ahmedabad,ethnic|bohemian,Lavender|Emerald Green|Black,3000,XXL,34,11,False,True,2025-02-09
+U0529,women,25-34,Pune,bohemian|party,Dark Wash Denim|Khaki|Mustard,2000,XS,34,8,False,True,2026-04-06
+U0530,women,18-24,Chennai,streetwear|sporty,Dark Wash Denim|Teal|Red,2000,M,28,7,False,True,2026-06-11
+U0531,women,25-34,Kochi,minimalist|sporty|casual,Off-White|Tan|Fuchsia,2000,L,30,6,False,True,2024-09-21
+U0532,men,18-24,Chennai,minimalist|ethnic,Mustard|Maroon|Coral,3000,S,32,11,False,True,2025-06-28
+U0533,men,18-24,Mumbai,party|minimalist|sporty,Coral|Fuchsia|Grey,2000,XXL,32,7,False,True,2026-06-03
+U0534,men,25-34,Pune,classic|formal|ethnic,Cream|Dark Wash Denim|Red,2000,S,30,9,False,True,2025-03-28
+U0535,men,18-24,Chandigarh,classic|formal,Navy|White|Khaki,2000,L,38,7,True,True,2025-07-17
+U0536,men,45+,Ranchi,ethnic|party,Teal|Light Wash Denim|Grey,2000,S,32,10,False,True,2024-12-06
+U0537,women,35-44,Mumbai,party|streetwear|casual,Dark Wash Denim|Beige|Lavender,1500,L,28,6,False,True,2025-06-24
+U0538,women,18-24,Delhi,party|ethnic|minimalist,Mustard|Teal|Olive,3000,S,32,5,False,True,2024-12-08
+U0539,women,18-24,Bengaluru,minimalist|ethnic,Dark Wash Denim|Grey|Navy,2000,L,30,5,False,True,2025-07-17
+U0540,women,35-44,Chennai,party|streetwear|sporty,Orange|Light Wash Denim|Peach,1500,XL,28,4,False,True,2026-07-25
+U0541,women,35-44,Hyderabad,bohemian|minimalist,Emerald Green|Royal Blue|White,2000,XS,32,5,False,True,2025-03-24
+U0542,women,18-24,Delhi,party|sporty,Olive|Teal|Orange,2000,XL,34,8,False,True,2025-11-30
+U0543,men,18-24,Lucknow,ethnic|bohemian,Royal Blue|Teal|Terracotta,3000,L,30,9,False,True,2024-10-24
+U0544,women,25-34,Pune,ethnic|bohemian,Royal Blue|Lemon Yellow|Emerald Green,2000,S,32,4,False,True,2025-02-11
+U0545,men,25-34,Kolkata,ethnic|classic,Royal Blue|Rust|Light Wash Denim,2000,M,38,11,False,True,2025-12-04
+U0546,men,25-34,Mumbai,streetwear|sporty,Mustard|Sage Green|Black,1500,L,36,10,False,True,2024-11-22
+U0547,women,25-34,Bengaluru,bohemian|party|casual,Light Wash Denim|Navy|Rust,3000,S,34,8,False,True,2025-06-25
+U0548,men,25-34,Chandigarh,streetwear|sporty,Terracotta|Off-White|Cream,2000,XL,38,10,False,True,2024-11-18
+U0549,men,35-44,Hyderabad,ethnic|bohemian|party,Navy|Brown|Orange,3000,S,30,10,True,True,2025-01-30
+U0550,women,25-34,Mumbai,classic|formal|ethnic,Mustard|White|Black,3000,M,32,7,False,True,2026-09-03
+U0551,women,35-44,Delhi,classic|formal,Light Wash Denim|Black|Teal,3000,S,28,8,False,True,2025-06-08
+U0552,men,25-34,Jaipur,ethnic|minimalist|casual,Off-White|Emerald Green|Maroon,3000,XXL,38,9,False,True,2026-06-25
+U0553,men,35-44,Kolkata,minimalist|casual,Off-White|Powder Blue|Terracotta,2000,M,34,11,False,True,2025-11-15
+U0554,women,18-24,Chandigarh,minimalist|sporty,Navy|Grey|White,2000,XS,28,6,False,True,2024-09-01
+U0555,men,25-34,Chandigarh,classic|formal|party,Terracotta|Beige|Grey,2000,XL,32,9,False,True,2025-11-07
+U0556,men,35-44,Patna,streetwear|sporty|casual,Black|Lilac|Mint Green,2000,L,30,10,False,True,2026-04-29
+U0557,women,25-34,Mumbai,minimalist|bohemian,Grey|Maroon|Powder Blue,3000,M,32,5,False,True,2025-05-20
+U0558,women,25-34,Kolkata,streetwear|sporty,Mint Green|Blush Pink|Light Wash Denim,3000,XS,28,6,False,True,2026-04-02
+U0559,women,18-24,Lucknow,minimalist|casual|sporty,Black|Off-White|Emerald Green,1500,S,28,5,False,True,2024-11-06
+U0560,men,18-24,Chandigarh,party|minimalist,Light Wash Denim|Brown|Grey,2000,XXL,38,7,False,True,2026-09-08
+U0561,women,18-24,Kochi,ethnic|party,Terracotta|Khaki|Dark Wash Denim,3000,XL,32,4,False,True,2025-07-06
+U0562,men,18-24,Kochi,minimalist|casual,Maroon|White|Coral,3000,XL,30,9,False,True,2025-11-09
+U0563,women,18-24,Delhi,streetwear|sporty,Coral|Powder Blue|Blush Pink,1500,XS,28,4,False,True,2026-06-17
+U0564,men,35-44,Ranchi,ethnic|classic|formal,Sage Green|Olive|Tan,2000,L,36,11,False,True,2025-05-04
+U0565,women,25-34,Lucknow,ethnic|streetwear|sporty,Royal Blue|Brown|Beige,2000,XL,30,4,False,True,2026-02-18
+U0566,women,18-24,Ahmedabad,streetwear|sporty|minimalist,Brown|Emerald Green|Off-White,2000,XS,34,5,False,True,2024-11-15
+U0567,men,25-34,Pune,streetwear|sporty,Light Wash Denim|Blush Pink|Cream,1500,S,38,9,False,True,2026-04-04
+U0568,women,35-44,Patna,minimalist|sporty,Khaki|Cream|Sage Green,3000,S,28,7,False,True,2025-05-18
+U0569,men,45+,Kolkata,ethnic|streetwear,Mustard|Fuchsia|Dark Wash Denim,3000,M,36,11,False,True,2025-05-08
+U0570,women,25-34,Hyderabad,streetwear|sporty,Lilac|Peach|Grey,3000,XL,28,7,False,True,2026-03-15
+U0571,men,45+,Mumbai,ethnic|streetwear,Dark Wash Denim|Terracotta|Teal,3000,S,36,11,False,True,2026-07-07
+U0572,women,25-34,Bhagalpur,ethnic|classic,Cream|Terracotta|Grey,3000,S,30,8,False,True,2025-11-09
+U0573,men,25-34,Hyderabad,party|formal,Light Wash Denim|Lavender|Cream,2000,S,30,10,True,True,2025-03-03
+U0574,women,18-24,Delhi,ethnic|minimalist|casual,Blush Pink|Mustard|Brown,3000,XL,28,5,False,True,2024-11-02
+U0575,women,25-34,Delhi,streetwear|sporty,Mint Green|Red|Lilac,2000,M,30,7,False,True,2025-06-15
+U0576,men,18-24,Chandigarh,ethnic|streetwear,Light Wash Denim|Emerald Green|Royal Blue,2000,L,34,10,False,True,2026-07-21
+U0577,men,25-34,Jaipur,bohemian|streetwear|casual,Maroon|Terracotta|Grey,3000,M,32,8,False,True,2025-04-30
+U0578,women,25-34,Chandigarh,classic|formal|bohemian,Navy|Black|Light Wash Denim,3000,S,34,7,True,True,2025-01-19
+U0579,women,35-44,Chennai,streetwear|party,Peach|Fuchsia|Red,2000,XS,34,7,False,True,2024-09-06
+U0580,men,18-24,Bhagalpur,ethnic|party|sporty,Emerald Green|Red|Powder Blue,2000,XL,38,9,False,True,2024-10-14
+U0581,women,18-24,Kochi,streetwear|sporty|party,Mustard|Fuchsia|Royal Blue,3000,M,30,6,True,True,2025-08-04
+U0582,women,18-24,Ranchi,ethnic|party,Coral|Emerald Green|Fuchsia,3000,XS,34,8,False,True,2024-10-11
+U0583,women,35-44,Chennai,ethnic|bohemian,Olive|Teal|Brown,3000,S,34,5,False,True,2026-04-30
+U0584,men,35-44,Chennai,bohemian|minimalist|formal,Grey|Tan|Fuchsia,2000,M,36,8,False,True,2025-02-11
+U0585,men,25-34,Ranchi,ethnic|bohemian,Teal|Emerald Green|Red,3000,M,36,10,False,True,2025-04-24
+U0586,women,25-34,Chennai,minimalist|casual,Light Wash Denim|Beige|Off-White,2000,M,32,4,False,True,2026-06-02
+U0587,men,18-24,Mumbai,party|streetwear,Grey|Peach|Fuchsia,2000,S,38,7,False,True,2026-06-04
+U0588,men,25-34,Ranchi,classic|formal,Light Wash Denim|Brown|Rust,3000,XXL,38,11,False,True,2025-01-18
+U0589,women,45+,Bengaluru,streetwear|sporty,Blush Pink|Teal|Powder Blue,2000,XS,32,8,False,True,2025-07-24
+U0590,men,35-44,Jaipur,party|classic,Fuchsia|Orange|Powder Blue,3000,M,32,7,False,True,2025-09-19
+U0591,women,25-34,Bhagalpur,minimalist|casual,Coral|Navy|Dark Wash Denim,1500,M,30,7,False,True,2026-09-20
+U0592,men,25-34,Jaipur,ethnic|minimalist,Black|Royal Blue|Fuchsia,1500,XXL,32,8,False,True,2025-07-24
+U0593,women,35-44,Jaipur,classic|formal,Lemon Yellow|Red|Dark Wash Denim,3000,S,32,7,False,True,2025-04-09
+U0594,men,18-24,Bhagalpur,streetwear|sporty,Mustard|Lilac|Light Wash Denim,5000,S,30,11,False,True,2025-10-21
+U0595,men,25-34,Chandigarh,streetwear|party,Rust|Light Wash Denim|Navy,5000,S,32,10,False,True,2026-04-13
+U0596,men,35-44,Ahmedabad,streetwear|sporty,Dark Wash Denim|Royal Blue|Off-White,3000,XXL,36,8,False,True,2025-06-22
+U0597,women,25-34,Kolkata,ethnic|classic|formal,Mustard|Cream|Rust,1500,XS,28,6,False,True,2025-03-29
+U0598,women,18-24,Chennai,bohemian|classic,Light Wash Denim|Lilac|Olive,2000,XL,34,5,True,True,2025-08-30
+U0599,women,18-24,Lucknow,bohemian|party,Light Wash Denim|Orange|Cream,3000,XS,28,6,False,True,2025-05-12
+U0600,women,18-24,Bhagalpur,streetwear|sporty|ethnic,Light Wash Denim|Red|Sage Green,3000,M,30,4,False,True,2025-09-05

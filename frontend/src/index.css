@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  h1, h2, h3 { @apply font-display; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-thread; outline-style: solid; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}
+@layer components {
+  .field { @apply w-full rounded-md border border-line bg-white px-3 py-2 text-sm text-ink; }
+  .btn-ghost { @apply rounded-md border border-line bg-white px-3 py-1.5 text-sm font-medium text-ink hover:bg-paper; }
+}
