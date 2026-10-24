@@ -1,3 +1,4 @@
+
 # StyleBridge AI: Recommender for clothing and footwear/accessories
 
 FastAPI backend + React/Tailwind frontend. All bundled data is **synthetic**.
@@ -86,3 +87,6 @@ Replace the CSVs in `data/` (same columns as the dataset pack), rerun `python -m
 
 ## Connecting to the outfit builder
 The outfit builder asks for ranked candidates per category (`category=footwear`, `accessory`, `bag`, `top`, ... with `max_price` from the remaining budget), then validates total price, stock and sizes deterministically.
+=======
+# StyleBridgeAI
+>>>>>>> 8415bd1ed55d00557ebce809a3c78aa065cf67e1
