@@ -1,0 +1,24 @@
+{
+  "_note": "SAMPLE store policies for the demo. Replace the text and the numbers with your real policies. return_window_days is read by code to compute return-by dates.",
+  "return_window_days": {
+    "top": 15, "bottom": 15, "dress": 15, "ethnic_set": 7, "outerwear": 15,
+    "footwear": 10, "accessory": 7, "bag": 10
+  },
+  "exchange_window_days": 15,
+  "chunks": [
+    {"id": "returns-overview", "title": "Returns: how long you have",
+     "text": "You can return most items within a return window that depends on the category. Clothing (tops, bottoms, dresses, outerwear) 15 days. Ethnic sets 7 days. Footwear 10 days. Bags 10 days. Accessories 7 days. The window is counted from the purchase date. The return date is the last day on which you can request a return."},
+    {"id": "returns-conditions", "title": "Returns: conditions",
+     "text": "Items must be unworn, unwashed, with all tags and original packaging. Footwear must be returned in the original box. Items marked final sale, innerwear, and items damaged after delivery cannot be returned. If you received a defective or wrong item, contact support within 48 hours of delivery and we will arrange a free pickup and replacement or refund."},
+    {"id": "returns-how", "title": "How to return an item and refund time",
+     "text": "To return an item open your orders, choose the item, select Return, pick a reason and schedule a pickup. Pickup happens within 2 to 3 working days. After the item passes quality check, the refund is issued to the original payment method in 5 to 7 working days. Cash on delivery orders are refunded to a bank account or store wallet."},
+    {"id": "exchange-size", "title": "Exchange and size change",
+     "text": "You can exchange an item for a different size or colour within 15 days of purchase, subject to stock. If the size you need is out of stock you can return the item for a refund instead. Exchanges are free for the first exchange per order. Size guide: check the sizes available listed on the product page."},
+    {"id": "shipping", "title": "Shipping and delivery",
+     "text": "Standard delivery takes 3 to 6 working days. Express delivery takes 1 to 2 working days in major cities. Orders above 999 rupees get free standard delivery, below that a 49 rupee delivery fee applies. You get a tracking link by SMS and email when the order ships."},
+    {"id": "cancellation", "title": "Cancelling an order",
+     "text": "You can cancel an order for a full refund until it is shipped. After it ships, you must wait for delivery and then use the return option within the return window."},
+    {"id": "payment", "title": "Payment and cash on delivery",
+     "text": "We accept UPI, cards, net banking and wallets. Cash on delivery is available on orders up to 5000 rupees. Prices on the site include GST. Discounts shown on a product are the difference between MRP and the selling price."}
+  ]
+}

@@ -6,19 +6,21 @@ from contextlib import asynccontextmanager
 import json
 from fastapi import Depends, FastAPI, Header, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 from . import auth, config as C
+from pydantic import BaseModel, Field
 from .service import RecommenderService, MODELS
+from .rag import Assistant
 
 svc: RecommenderService | None = None
+assistant: Assistant | None = None
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global svc
+    global svc, assistant
     svc = RecommenderService().train()
+    assistant = Assistant(svc)
     yield
-
 
 app = FastAPI(title="StyleBridge AI - Recommender (clothing + footwear/accessories)", version="3.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
@@ -109,6 +111,15 @@ def feedback(f: Feedback, uid: str = Depends(current_user)):
     except ValueError as e:
         raise HTTPException(400, str(e))
 
+
+# new route, before "# ---- admin"
+class Ask(BaseModel):
+    question: str = Field(min_length=2, max_length=500)
+
+@app.post("/api/ask")
+def ask(body: Ask, uid: str = Depends(current_user)):
+    """RAG: answers about products, store policies (e.g. return window) and the signed-in shopper's own purchases."""
+    return assistant.answer(uid, body.question)
 
 # ------------------------------------------------------------ admin
 @app.post("/api/retrain")

@@ -7,11 +7,13 @@ import Recommendations from "./components/Recommendations.jsx";
 import CompareModels from "./components/CompareModels.jsx";
 import EvaluationPanel from "./components/EvaluationPanel.jsx";
 import { Segmented } from "./components/ui.jsx";
+import AskAssistant from "./components/askAssistant.jsx";
 
 const TABS = [
   { value: "recs", label: "Recommendations" },
   { value: "compare", label: "Compare models" },
   { value: "eval", label: "Evaluation" },
+  { value: "ask", label: "Ask" },
 ];
 
 export default function App() {
@@ -46,7 +48,7 @@ export default function App() {
       </header>
 
       <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-6 px-4 py-4 sm:px-6 lg:min-h-0 lg:flex-row">
-        {tab !== "eval" && (
+        {tab !== "eval" && tab !== "ask" &&(
           <aside aria-label="Your profile and search" className="w-full space-y-6 lg:w-[320px] lg:shrink-0 lg:overflow-y-auto lg:overscroll-contain lg:pb-6 lg:pr-2">
             <ProfilePanel refreshKey={`${userId}-${profileKey}`} onSwitched={(id) => setUserId(id)} onSignOut={signOut} />
             <Filters domain={domain} onDomain={setDomain} model={model} onModel={setModel} filters={filters} onFilters={setFilters} showModel={tab === "recs"} />
@@ -54,6 +56,7 @@ export default function App() {
         )}
         <div className="min-w-0 flex-1 lg:overflow-auto lg:overscroll-contain lg:pb-6 lg:pr-1">
           {tab === "eval" ? <EvaluationPanel /> :
+            tab === "ask" ? <AskAssistant key={userId} /> :
             tab === "recs" ? <Recommendations key={userId} domain={domain} model={model} filters={filters} onPurchase={() => setProfileKey((n) => n + 1)} /> :
             <CompareModels key={userId} filters={filters} />}
           <footer className="mt-10 text-xs text-slate2">

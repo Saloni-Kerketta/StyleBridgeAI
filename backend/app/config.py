@@ -7,6 +7,7 @@ DATA_DIR = Path(os.getenv("SB_DATA_DIR", ROOT / "data"))
 ARTIFACT_DIR = Path(os.getenv("SB_ARTIFACT_DIR", ROOT / "backend" / "artifacts"))
 FEEDBACK_FILE = ARTIFACT_DIR / "feedback_events.jsonl"
 EVAL_FILE = ARTIFACT_DIR / "evaluation.json"
+POLICY_FILE = DATA_DIR / "policies.json"   # store policies used by the RAG assistant
 SECRET_FILE = ARTIFACT_DIR / ".secret"      # signing key for sign-in tokens (created on first run; keep private)
 
 # Demo mode: enables /api/login (sign in by shopper ID, NO password) and /api/demo-accounts (5 curated synthetic accounts).
@@ -37,3 +38,8 @@ LATENT_DIM = 32
 ALS_ITERS = 15
 ALS_REG = 0.1
 ALS_ALPHA = 8.0
+
+# RAG assistant (/api/ask). Without LLM_API_KEY it answers with a deterministic extractive reply from the same retrieved context.
+LLM_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+LLM_MODEL = os.getenv("SB_LLM_MODEL", "claude-sonnet-5-5")
+TODAY = os.getenv("SB_TODAY")             # optional YYYY-MM-DD override of "today" (demo/tests); synthetic data ends 2026-10-22

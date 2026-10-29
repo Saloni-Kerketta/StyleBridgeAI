@@ -37,6 +37,7 @@ export const api = {
   me: () => request("/me"),
   recs: (params) => request("/recommendations", { params }),
   feedback: (body) => request("/feedback", { method: "POST", body }),
+  ask: (question) => request("/ask", { method: "POST", body: { question } }),
 };
 
 /** Runs `fn` whenever `deps` change; ignores stale responses. */

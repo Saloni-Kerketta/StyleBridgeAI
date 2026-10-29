@@ -5,3 +5,7 @@
 {"user_id": "U0019", "product_id": "P0214", "event_type": "purchase", "event_weight": 5, "timestamp": "2026-10-23 16:17:58", "split": "train", "is_synthetic": false}
 {"user_id": "U0019", "product_id": "P0180", "event_type": "dismiss", "event_weight": -1, "timestamp": "2026-10-23 16:18:00", "split": "train", "is_synthetic": false}
 {"user_id": "U0019", "product_id": "P0197", "event_type": "like", "event_weight": 2, "timestamp": "2026-10-23 16:18:14", "split": "train", "is_synthetic": false}
+{"user_id": "U0019", "product_id": "P0150", "event_type": "purchase", "event_weight": 5, "timestamp": "2026-10-28 23:41:20", "split": "train", "is_synthetic": false}
+{"user_id": "U0019", "product_id": "P0023", "event_type": "purchase", "event_weight": 5, "timestamp": "2026-10-29 14:52:14", "split": "train", "is_synthetic": false}
+{"user_id": "U0019", "product_id": "P0150", "event_type": "purchase", "event_weight": 5, "timestamp": "2026-10-29 14:59:59", "split": "train", "is_synthetic": false}
+{"user_id": "U0019", "product_id": "P0150", "event_type": "purchase", "event_weight": 5, "timestamp": "2026-10-29 15:05:02", "split": "train", "is_synthetic": false}
