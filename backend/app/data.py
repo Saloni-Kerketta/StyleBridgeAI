@@ -48,11 +48,13 @@ class Dataset:
         self.shared_cols = np.array([n.startswith(("style_", "colour_", "family_", "occ_")) for n in self.feature_names])
 
 
-def load_dataset(data_dir=C.DATA_DIR, guests=True) -> Dataset:
+def load_dataset(data_dir=C.DATA_DIR, guests=True, extra_users=None) -> Dataset:
     products, users, inter = load_raw(data_dir)
     users = users.assign(is_guest=False)
     if guests:
         users = pd.concat([users, make_guests()], ignore_index=True)
+    if extra_users is not None and len(extra_users):        # registered shoppers, appended last so existing row indices never move
+        users = pd.concat([users, extra_users.assign(is_guest=False)], ignore_index=True)
     return Dataset(products, users, inter)
 
 

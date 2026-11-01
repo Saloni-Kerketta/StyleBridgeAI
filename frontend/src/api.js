@@ -22,7 +22,7 @@ async function request(path, { params, method = "GET", body } = {}) {
     const detail = await res.json().catch(() => ({}));
     const err = new Error(detail.detail || `Request failed (${res.status})`);
     err.status = res.status;
-    if (res.status === 401 && token) { session.clear(); window.dispatchEvent(new Event("sb-signed-out")); }
+    if (res.status === 401 && !path.startsWith("/auth/")) { session.clear(); window.dispatchEvent(new Event("sb-signed-out")); }   // expired or missing session: back to the sign-in screen
     throw err;
   }
   return res.json();
@@ -34,6 +34,11 @@ export const api = {
   evaluation: () => request("/evaluation"),
   demoAccounts: () => request("/demo-accounts"),
   login: (user_id) => request("/login", { method: "POST", body: { user_id } }),
+  authOptions: () => request("/auth/options"),
+  // register: (body) => request("/auth/register", { method: "POST", body }),
+  firebaseLogin: (id_token) => request("/auth/firebase", { method: "POST", body: { id_token } }),
+  firebaseRegister: (body) => request("/auth/firebase/register", { method: "POST", body }),
+  signIn: (email, password) => request("/auth/login", { method: "POST", body: { email, password } }),
   me: () => request("/me"),
   recs: (params) => request("/recommendations", { params }),
   feedback: (body) => request("/feedback", { method: "POST", body }),

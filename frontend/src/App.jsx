@@ -8,6 +8,7 @@ import CompareModels from "./components/CompareModels.jsx";
 import EvaluationPanel from "./components/EvaluationPanel.jsx";
 import { Segmented } from "./components/ui.jsx";
 import AskAssistant from "./components/askAssistant.jsx";
+import { fbSignOut } from "./firebase.js";
 
 const TABS = [
   { value: "recs", label: "Recommendations" },
@@ -17,7 +18,7 @@ const TABS = [
 ];
 
 export default function App() {
-  const [userId, setUserId] = useState(() => session.get()?.userId ?? null);
+  const [userId, setUserId] = useState(() => { const s = session.get(); return s?.token && s?.userId ? s.userId : null; });
   const [tab, setTab] = useState("recs");
   const [domain, setDomain] = useState("all");
   const [model, setModel] = useState("similar_shoppers");
@@ -31,8 +32,9 @@ export default function App() {
     return () => window.removeEventListener("sb-signed-out", out);
   }, []);
 
-  const signOut = () => { session.clear(); setUserId(null); };
-  if (!userId) return <SignIn onSignedIn={(id) => { setUserId(id); setTab("recs"); }} />;
+  // const signOut = () => { session.clear(); setUserId(null); };
+  // if (!userId) return <SignIn onSignedIn={(id) => { setUserId(id); setTab("recs"); }} />;
+  const signOut = async () => { session.clear(); await fbSignOut(); setUserId(null); };   // sign out of Firebase first, or it would sign you straight back in
 
   return (
     // On large screens the page itself never scrolls: the left and right panes each have their own scrollbar.

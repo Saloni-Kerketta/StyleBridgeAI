@@ -7,6 +7,7 @@ import pandas as pd
 from . import config as C
 from .data import Dataset, build_bundle, load_dataset
 from .models import build_models
+from . import accounts, config as C
 
 MODELS = ["similar_shoppers", "popularity", "content", "als"]
 TOP_SIZE_CATS = {"top", "dress", "outerwear", "ethnic_set"}
@@ -15,7 +16,7 @@ DOMAIN_OF_CATEGORY = {c: d for d, cfg in C.DOMAINS.items() for c in cfg["categor
 
 class RecommenderService:
     def __init__(self, ds: Dataset | None = None):
-        self.ds = ds or load_dataset()
+        self.ds = ds or load_dataset(extra_users=accounts.load_profiles())
         self.extra_events: list[dict] = []
         self.family_of = dict(zip(self.ds.products.colour, self.ds.products.colour_family))
         self.trained_at = None
@@ -30,6 +31,27 @@ class RecommenderService:
         self.sim = self.models["similar_shoppers"]
         self.trained_at = time.strftime("%Y-%m-%d %H:%M:%S")
         return self
+
+    def with_new_user(self, row: dict) -> "RecommenderService":
+        """A fresh service that also contains one new registered shopper (appended last). The caller swaps it in."""
+        users = pd.concat([self.ds.users, pd.DataFrame([{**row, "is_guest": False}])], ignore_index=True)
+        new = RecommenderService(Dataset(self.ds.products, users, self.ds.interactions))
+        new.extra_events = self.extra_events                 # keep feedback given since startup
+        return new.train()
+
+    def signup_options(self) -> dict:
+        """Valid choices for the sign-up form (taken from the data, so a new shopper's sizes always match the catalogue)."""
+        ds = self.ds
+        syn = ds.users[ds.users.is_synthetic.astype(bool)]
+        order = ["XS", "S", "M", "L", "XL", "XXL"]
+        sizes = {}
+        for g in ("women", "men"):
+            s = syn[syn.gender == g]
+            sizes[g] = {"top": [x for x in order if x in set(s.top_size.astype(str))],
+                        "bottom": sorted({str(x) for x in s.bottom_size}, key=int), "shoe": sorted({str(x) for x in s.shoe_size}, key=int)}
+        return {"styles": sorted(set(ds.products["style"])), "colours": sorted(set(ds.products.colour)),
+                "age_groups": sorted(set(syn.age_group)), "sizes": sizes, "min_password_length": 8}
+
 
     # ------------------------------------------------------------ users
     def user_row(self, user_id):
@@ -74,7 +96,7 @@ class RecommenderService:
                   ("both_domains", None, "Has bought in both domains"), ("no_purchases", None, "Existing shopper with no purchases")]
         for state, dom, label in wanted:
             for u, uid in enumerate(ds.user_ids):
-                if ds.users.is_guest.iat[u] or self.state(u) != state:
+                if ds.users.is_guest.iat[u] or not ds.users.is_synthetic.iat[u] or self.state(u) != state:
                     continue
                 if dom and (self.purchases(u)[dom] == 0 or any(v for d, v in self.purchases(u).items() if d != dom)):
                     continue

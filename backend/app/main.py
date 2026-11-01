@@ -10,10 +10,15 @@ from . import auth, config as C
 from pydantic import BaseModel, Field
 from .service import RecommenderService, MODELS
 from .rag import Assistant
-
+import json, threading
+from typing import Literal
+from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
+from . import accounts, auth, config as C, firebase
 svc: RecommenderService | None = None
 assistant: Assistant | None = None
 
+limiter = accounts.LoginLimiter()
+reg_lock = threading.Lock()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -38,6 +43,33 @@ class Login(BaseModel):
     user_id: str
 
 
+class PasswordLogin(BaseModel):
+    email: str
+    password: str
+
+
+class Profile(BaseModel):
+    gender: Literal["women", "men"]
+    age_group: str
+    preferred_styles: list[str]
+    favourite_colours: list[str]
+    budget_per_outfit_inr: int = Field(2000, ge=300, le=50000)
+    top_size: str
+    bottom_size: str
+    shoe_size: str
+
+
+class Register(Profile):
+    email: str
+    password: str
+
+
+class FirebaseToken(BaseModel):
+    id_token: str
+
+
+class FirebaseRegister(Profile):
+    id_token: str
 class Feedback(BaseModel):
     product_id: str
     event_type: str  # view | like | save | add_to_cart | purchase | dismiss
@@ -46,7 +78,7 @@ class Feedback(BaseModel):
 # ------------------------------------------------------------ public (no personal data)
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "trained_at": svc.trained_at, "demo_mode": C.DEMO_MODE, "signal": C.SIGNAL, "neighbours": C.NEIGHBOURS}
+    return {"registration_open": C.REGISTRATION_OPEN, "firebase": firebase.enabled(), "local_auth": C.LOCAL_AUTH, "status": "ok", "trained_at": svc.trained_at, "demo_mode": C.DEMO_MODE, "signal": C.SIGNAL, "neighbours": C.NEIGHBOURS}
 
 
 @app.get("/api/domains")
@@ -81,8 +113,74 @@ def login(body: Login):
         raise HTTPException(404, "Not found")
     if body.user_id not in svc.ds.user_idx:
         raise HTTPException(404, "Unknown shopper id")
+    u = svc.ds.user_idx[body.user_id]
+    if not (svc.ds.users.is_guest.iat[u] or svc.ds.users.is_synthetic.iat[u]):  # real accounts always need their password
+        raise HTTPException(403, "This account needs its email and password.")
     return {"token": auth.make_token(body.user_id), "user_id": body.user_id}
 
+
+# ------------------------------------------------------------ real accounts (email + password)
+@app.get("/api/auth/options")
+def auth_options():
+    return {**svc.signup_options(), "registration_open": C.REGISTRATION_OPEN}
+
+
+def _checked_profile(b: Register) -> dict:
+    o = svc.signup_options()
+    if len(b.password) < o["min_password_length"] or len(b.password) > 128:
+        raise HTTPException(422, f"Password must be {o['min_password_length']} to 128 characters.")
+    if b.age_group not in o["age_groups"]:
+        raise HTTPException(422, "Choose an age group.")
+    styles, colours = list(dict.fromkeys(b.preferred_styles)), list(dict.fromkeys(b.favourite_colours))
+    if not 1 <= len(styles) <= 5 or any(x not in o["styles"] for x in styles):
+        raise HTTPException(422, "Pick 1 to 5 styles.")
+    if not 1 <= len(colours) <= 6 or any(x not in o["colours"] for x in colours):
+        raise HTTPException(422, "Pick 1 to 6 favourite colours.")
+    sz = o["sizes"][b.gender]
+    if b.top_size not in sz["top"] or b.bottom_size not in sz["bottom"] or b.shoe_size not in sz["shoe"]:
+        raise HTTPException(422, "Choose your sizes from the lists.")
+    return {"gender": b.gender, "age_group": b.age_group, "preferred_styles": styles, "favourite_colours": colours,
+            "budget_per_outfit_inr": b.budget_per_outfit_inr, "top_size": b.top_size, "bottom_size": b.bottom_size, "shoe_size": b.shoe_size}
+
+
+@app.post("/api/auth/register", status_code=201)
+def register(b: Register):
+    global svc
+    if not C.LOCAL_AUTH:
+        raise HTTPException(404, "Not found")
+    if not C.REGISTRATION_OPEN:
+        raise HTTPException(403, "Registration is closed.")
+    try:
+        email = accounts.clean_email(b.email)
+    except ValueError as e:
+        raise HTTPException(422, str(e))
+    if not 8 <= len(b.password) <= 128:
+        raise HTTPException(422, "Password must be 8 to 128 characters.")
+    profile = _checked_profile(b)
+    with reg_lock:                                   # one sign-up at a time: each one retrains the models with the new shopper
+        try:
+            uid = accounts.create_account(email, b.password, profile)
+        except accounts.EmailTaken:
+            raise HTTPException(409, "An account with this email already exists. Sign in instead.")
+        new = svc.with_new_user(accounts.profile_row(uid, profile))
+        svc = new
+        assistant.svc = new
+    return {"token": auth.make_token(uid), "user_id": uid}
+
+
+@app.post("/api/auth/login")
+def password_login(b: PasswordLogin, request: Request):
+    if not C.LOCAL_AUTH:
+        raise HTTPException(404, "Not found")
+    key = f"{request.client.host if request.client else '?'}|{b.email.strip().lower()}"
+    if limiter.blocked(key):
+        raise HTTPException(429, "Too many failed attempts. Try again in 15 minutes.")
+    uid = accounts.authenticate(b.email, b.password)
+    if not uid or uid not in svc.ds.user_idx:
+        limiter.fail(key)
+        raise HTTPException(401, "Incorrect email or password.")
+    limiter.clear(key)
+    return {"token": auth.make_token(uid), "user_id": uid}
 
 # ------------------------------------------------------------ signed-in shopper only
 @app.get("/api/me")

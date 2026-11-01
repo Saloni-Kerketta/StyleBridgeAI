@@ -8,6 +8,7 @@ ARTIFACT_DIR = Path(os.getenv("SB_ARTIFACT_DIR", ROOT / "backend" / "artifacts")
 FEEDBACK_FILE = ARTIFACT_DIR / "feedback_events.jsonl"
 EVAL_FILE = ARTIFACT_DIR / "evaluation.json"
 POLICY_FILE = DATA_DIR / "policies.json"   # store policies used by the RAG assistant
+ACCOUNTS_DB = ARTIFACT_DIR / "accounts.db"   # registered accounts (salted password hashes). 
 SECRET_FILE = ARTIFACT_DIR / ".secret"      # signing key for sign-in tokens (created on first run; keep private)
 
 # Demo mode: enables /api/login (sign in by shopper ID, NO password) and /api/demo-accounts (5 curated synthetic accounts).
@@ -16,7 +17,6 @@ SECRET_FILE = ARTIFACT_DIR / ".secret"      # signing key for sign-in tokens (cr
 DEMO_MODE = os.getenv("SB_DEMO_MODE", "1") == "1"
 ADMIN_KEY = os.getenv("SB_ADMIN_KEY")        # required in the X-Admin-Key header for /api/retrain when set
 TOKEN_TTL_SECONDS = 8 * 3600
-
 SEED = 42
 EVENT_WEIGHTS = {"view": 1, "like": 2, "save": 3, "add_to_cart": 4, "purchase": 5, "dismiss": -1}
 POSITIVE_MIN_WEIGHT = 2           # like/save/cart/purchase count as "relevant" when evaluating
@@ -40,6 +40,16 @@ ALS_REG = 0.1
 ALS_ALPHA = 8.0
 
 # RAG assistant (/api/ask). Without LLM_API_KEY it answers with a deterministic extractive reply from the same retrieved context.
-LLM_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-LLM_MODEL = os.getenv("SB_LLM_MODEL", "claude-sonnet-5-5")
-TODAY = os.getenv("SB_TODAY")             # optional YYYY-MM-DD override of "today" (demo/tests); synthetic data ends 2026-10-22
+LLM_API_KEY = os.getenv("GROQ_API_KEY")
+LLM_MODEL = os.getenv("SB_LLM_MODEL", "llama-3.3-70b-versatile")
+TODAY = os.getenv("SB_TODAY")             # optional YYYY-MM-DD override of "today" (demo/tests); 
+#synthetic data ends 2026-10-22
+# Accounts (email + password). Registration can be switched off with SB_REGISTRATION=0.
+REGISTRATION_OPEN = os.getenv("SB_REGISTRATION", "1") == "1"
+LOGIN_MAX_FAILS = 5                       # failed password attempts allowed ...
+LOGIN_WINDOW_SECONDS = 15 * 60            # ... per (IP, email) in this window, then HTTP 429
+
+# Firebase Authentication. Set SB_FIREBASE_PROJECT_ID (Firebase console > Project settings > Project ID) to turn it on.
+FIREBASE_PROJECT_ID = os.getenv("SB_FIREBASE_PROJECT_ID")
+FIREBASE_SESSION_SECONDS = 3600           # lifetime of the app token issued after a Firebase sign-in (the browser silently renews it)
+LOCAL_AUTH = os.getenv("SB_LOCAL_AUTH", "1") == "1"   # the built-in email+password accounts; set 0 to use Firebase only
