@@ -3,6 +3,11 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+try:
+    from dotenv import load_dotenv
+    load_dotenv(ROOT / "backend" / ".env")        # secrets live in backend/.env (git-ignored), never in code
+except ImportError:
+    pass
 DATA_DIR = Path(os.getenv("SB_DATA_DIR", ROOT / "data"))
 ARTIFACT_DIR = Path(os.getenv("SB_ARTIFACT_DIR", ROOT / "backend" / "artifacts"))
 FEEDBACK_FILE = ARTIFACT_DIR / "feedback_events.jsonl"

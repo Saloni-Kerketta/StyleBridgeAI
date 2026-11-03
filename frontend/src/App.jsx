@@ -7,7 +7,7 @@ import Recommendations from "./components/Recommendations.jsx";
 import CompareModels from "./components/CompareModels.jsx";
 import EvaluationPanel from "./components/EvaluationPanel.jsx";
 import { Segmented } from "./components/ui.jsx";
-import AskAssistant from "./components/askAssistant.jsx";
+import AskAssistant from "./components/AskAssistant.jsx";
 import { fbSignOut } from "./firebase.js";
 
 const TABS = [
@@ -33,7 +33,7 @@ export default function App() {
   }, []);
 
   // const signOut = () => { session.clear(); setUserId(null); };
-  // if (!userId) return <SignIn onSignedIn={(id) => { setUserId(id); setTab("recs"); }} />;
+  if (!userId) return <SignIn onSignedIn={(id) => { setUserId(id); setTab("recs"); }} />;
   const signOut = async () => { session.clear(); await fbSignOut(); setUserId(null); };   // sign out of Firebase first, or it would sign you straight back in
 
   return (

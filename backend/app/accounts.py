@@ -45,6 +45,9 @@ _DUMMY = None
 def _db() -> sqlite3.Connection:
     C.ACCOUNTS_DB.parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(C.ACCOUNTS_DB)
+    con.execute("""CREATE TABLE IF NOT EXISTS accounts (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL,
+        user_id TEXT UNIQUE NOT NULL, profile TEXT NOT NULL, created_at TEXT NOT NULL)""")
     con.execute("""CREATE TABLE IF NOT EXISTS firebase_accounts (
         firebase_uid TEXT PRIMARY KEY, email TEXT, user_id TEXT UNIQUE NOT NULL, profile TEXT NOT NULL, created_at TEXT NOT NULL)""")
     return con
@@ -79,6 +82,7 @@ def create_firebase_account(firebase_uid: str, email: str | None, profile: dict)
         con.execute("INSERT INTO firebase_accounts (firebase_uid, email, user_id, profile, created_at) VALUES (?,?,?,?,?)",
                     (firebase_uid, email, uid, json.dumps(profile), time.strftime("%Y-%m-%d %H:%M:%S")))
     return uid
+
 
 def authenticate(email: str, password: str) -> str | None:
     """Shopper id if the email and password match, else None. Takes the same time for unknown emails."""
